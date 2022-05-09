@@ -1,0 +1,33 @@
+go to port_PBcfg.c and change the struct for the desired pin with the configuration u want.
+
+The default configuration as follow:
+	1. The port number for each channel = (0,1,2,3,4,5 -> A,B,C,D,E,F in order)
+	2. The pin number for each channel = (from 0 -> 8)
+	3. The channel direction = (input)
+	4. The channel mode = (DIO digital input output pin)
+	5. The internal resistor = (OFF)
+	6. The initial value = (STD_LOW)
+	7. The pin direction changeable during runing time or not = (STD_OFF)
+	8. The pin mode changeable during runing time or not = (STD_OFF)
+
+{
+	Port_number,
+	Pin_number,
+	Direction,
+	Mode,
+	Internal_resistor,
+	Initial_value,
+	Direction_changable,
+	Mode_changable
+}
+
+ex: this is configuration for pin A0
+const Port_ConfigChannel Port_Configurations_PA0 = {
+	PORT_A,
+	PIN_0,
+	PORT_PIN_IN,
+	PORT_DIO_MODE,
+	RESISTOR_OFF,
+	STD_LOW,
+	STD_OFF,
+	STD_OFF};
