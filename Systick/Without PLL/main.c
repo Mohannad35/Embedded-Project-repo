@@ -1,5 +1,5 @@
 #include "tm4c123gh6pm_registers.h"
-
+#include "Std_Types.h"
 #define SYSTICK_PRIORITY_MASK        0x1FFFFFFF
 #define SYSTICK_INTERRUPT_PRIORITY       3
 #define SYSTICK_PRIORITY_BITS_POS        29
@@ -7,10 +7,6 @@
 #define NUMBER_TICKS_PER_ONE_SECOND      1
 #define NUMBER_TICKS_PER_TWO_SECOND      2
 #define NUMBER_TICKS_PER_THREE_SECOND    3
-
-#define SVC_PRIORITY_MASK        0x1FFFFFFF
-#define SVC_PRIORITY                 0
-#define SVC_PRIORITY_BITS_POS        29
 
 /* Enable Exceptions ... This Macro enables Exceptions by clearing the F-bit in the FAULTMASK */
 #define Enable_Exceptions()    __asm("CPSIE F")
@@ -23,12 +19,6 @@
 
 /* Disable IRQ Interrupts ... This Macro disables IRQ interrupts by setting the I-bit in the PRIMASK. */
 #define Disable_Interrupts()   __asm("CPSID I")
-
-/* Go to low power mode while waiting for the next interrupt */
-#define Wait_For_Interrupt()   __asm("WFI")
-
-/* Trigger SVC Exception ... This Macro use the SVC instruction to make SW Interrupt */
-#define Trigger_SVC_Exception() __asm("SVC #0")
 
 volatile unsigned char ticks_num = 0;
 
@@ -78,71 +68,24 @@ void SysTick_Init(void)
     NVIC_SYSTEM_PRI3_REG =  (NVIC_SYSTEM_PRI3_REG & SYSTICK_PRIORITY_MASK) | (SYSTICK_INTERRUPT_PRIORITY << SYSTICK_PRIORITY_BITS_POS);
 }
 
-/* Set PRIV Bit(Bit 0) in the CONTROL register to switch to Unprivileged access level */
-void Switch_To_Unpriviledged(void)
-{
-    __asm("MOV R0, #1");      /* Set the Ro register value to 1 */
-    __asm("MSR CONTROL, R0"); /* Set the PRIV Bit(Bit 0) to 1 ... This will switch to Unprivileged access level */
-}
-
-/* SVC Exception Handler */
-void SVC_Handler(void)
-{
-    unsigned char SVC_Num = 0;
-    __asm("LDR R0, [SP, #24]");  /* Extract the stacked LR register value which vectoring to this handler */
-    __asm("LDRB R0, [R0, #-2]"); /* Extract the SVC number value it is exist in the first byte of address LR-2 */
-    __asm("STR R0, [SP]");       /* Load the R0 value to SVC_Num variable as SP is pointing to SVC_Num location in the stack memory */
-    
-    switch(SVC_Num)
-    {
-        case 0:
-            __asm("MOV R3, #0");      /* Load the R3 register with value 0 */
-            __asm("MSR CONTROL, R3"); /* Clear the PRIV Bit(Bit 0) ... This will switch to Privileged access level */
-            break;
-        case 1:
-        case 2:
-        case 3:  
-        case 255:  
-            break;
-        default:
-            break;
-    }
-}
-
-/* Initialize and Setup SVC Exception Priority */
-void SVC_Init(void)
-{
-    /* Assign priority level 0 to the SVC Interrupt */
-    NVIC_SYSTEM_PRI2_REG = (NVIC_SYSTEM_PRI2_REG & SVC_PRIORITY_MASK) | (SVC_PRIORITY << SVC_PRIORITY_BITS_POS);
-}
-
 int main(void)
 {
     /* Enable clock for PORTF and allow time for clock to start*/ 
     volatile unsigned long delay = 0;
     SYSCTL_REGCGC2_REG |= 0x00000020;
     delay = SYSCTL_REGCGC2_REG;
-    
+
     /* Enable Interrupts and Exceptions */
     Enable_Interrupts();
     Enable_Exceptions();
-    
+
     /* Initailize the LEDs as GPIO Pins */
     Leds_Init();
-    
-    /* Initialize the SCV Exception */
-    SVC_Init();
-    
-    /* Switch to Unpriviledged access level */
-    Switch_To_Unpriviledged();
-    
-    /* Triiger SVC Exception to go back to Priviledged access level through the SVC handler */
-    Trigger_SVC_Exception();
-    
+
     /* Initalize the SysTick Timer to generate an interrupt every 1 second */
     SysTick_Init();
-    
+
     while(1){}
-    
+
     return 0;
 }
