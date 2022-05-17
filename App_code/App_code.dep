@@ -5,35 +5,44 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\keypad.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\cstartup_M.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\LCD.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\LED_SW.o</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\LED_SW.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\keypad.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\std_types.h</file>
             <file>$PROJ_DIR$\common_macros.h</file>
-            <file>$PROJ_DIR$\LCD.c</file>
-            <file>$PROJ_DIR$\LED_SW.c</file>
-            <file>$PROJ_DIR$\tm4c123gh6pm_registers.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\keypad.c</file>
-            <file>$PROJ_DIR$\cstartup_M.c</file>
             <file>$PROJ_DIR$\LCD.h</file>
-            <file>$PROJ_DIR$\systick.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\keypad.o</file>
+            <file>$PROJ_DIR$\keypad.c</file>
             <file>$PROJ_DIR$\systick.h</file>
+            <file>$PROJ_DIR$\systick.c</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm_registers.h</file>
             <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
-            <file>$PROJ_DIR$\Debug\Exe\App_code.out</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$PROJ_DIR$\Debug\List\App_code.map</file>
+            <file>$PROJ_DIR$\Debug\Exe\App_code.out</file>
+            <file>$PROJ_DIR$\LCD.c</file>
+            <file>$PROJ_DIR$\LED_SW.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\LED_SW.o</file>
+            <file>$PROJ_DIR$\cstartup_M.c</file>
+            <file>$PROJ_DIR$\LED_SW.c</file>
+            <file>$PROJ_DIR$\std_types.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\LCD.o</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup_M.o</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\LCD.c</name>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 13 12</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\keypad.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -43,63 +52,9 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 19 12 11 15</file>
+                    <file> 1 0 19 8</file>
                 </tool>
             </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\LED_SW.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 7 12 11 15</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 8</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19 7 12 9 11 21 15</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\keypad.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 1</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 12 9 11 15</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\cstartup_M.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 2</file>
-                </tool>
-            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\systick.c</name>
@@ -112,31 +67,76 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 11 21 15</file>
+                    <file> 19 6 8</file>
                 </tool>
             </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 23 25</file>
-                </tool>
-            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\App_code.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 25</file>
+                    <file> 12</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 22 24 10 0 6 4 5 2 1 8 3</file>
+                    <file> 9 24 23 20 11 21 16 25 4 10 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LCD.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 19 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup_M.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\LED_SW.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15 1 19 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 15 1 0 19 6 8</file>
                 </tool>
             </inputs>
         </file>

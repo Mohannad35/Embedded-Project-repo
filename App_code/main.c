@@ -9,6 +9,9 @@
 /* Global variable to determine the number of systick interrupt (number of seconds) */
 volatile uint32 ticks_num = 0;
 
+/* initialize with 5 at first so we make 0 when we start counting */
+uint8 first_stop_flag = 5, second_stop_flag = 5;
+
 #define NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND 762
 void Delay_MS(unsigned long long n)
 {
@@ -24,33 +27,84 @@ void SysTick_Handler(void)
 	LCD_displayCounter(ticks_num);
 }
 
-/* GPIO PORTF External Interrupt - ISR */
+/* GPIO PORTA External Interrupt - ISR */
 void GPIOPortF_Handler(void)
 {
-	if (BIT_IS_SET(GPIO_PORTF_ICR_REG, 0))
+	LED_ON();
+	if (Read_STOP_SW())
 	{
-		GPIO_PORTF_DATA_REG  |= (1<<1);       /* Red LED ON*/
-    	GPIO_PORTF_ICR_REG   |= (1<<0);       /* Clear Trigger flag for PF4 (Interupt Flag) */
+		/* Clear Trigger flag for SW1 (Interupt Flag) */
+    	(*((volatile uint32 *)(SW_PORT + PORT_ICR_OFFSET)))   |= (1<<SW1_PIN);
+
+		if (first_stop_flag == 0)
+		{
+			first_stop_flag = 1;
+			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
+			LED_ON();
+			SysTick_Disable();
+		}
+		else if (first_stop_flag == 1)
+		{
+			first_stop_flag = 5;
+			second_stop_flag = 1;
+			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
+			LED_OFF();
+			SysTick_Disable();
+			ticks_num = 0;
+		}
+
 	}
-	else if (BIT_IS_SET(GPIO_PORTF_ICR_REG, 4))
+	else if (Read_START_SW())
 	{
-		GPIO_PORTF_DATA_REG  |= (1<<2);       /* Blue LED ON*/
-    	GPIO_PORTF_ICR_REG   |= (1<<4);       /* Clear Trigger flag for PF4 (Interupt Flag) */
+		/* Clear Trigger flag for SW2 (Interupt Flag) */
+    	(*((volatile uint32 *)(SW_PORT + PORT_ICR_OFFSET)))   |= (1<<SW2_PIN);
+
+		if (first_stop_flag == 1)
+		{
+			first_stop_flag = 0;
+			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
+			LED_OFF();
+			SysTick_Enable();
+		}
+
 	}
-	
-    
+
 }
 
 /* Count down from n_seconds to 00:00 */
 void App_Counter(uint32 n_seconds)
 {
+	LED_ON();
+	Delay_MS(500);
+	LED_OFF();
 	ticks_num = n_seconds;
+	first_stop_flag = 0;
 	SysTick_Enable();
 	while (ticks_num > 0)
 		;
 	SysTick_Disable();
-	// ticks_num = 0;
-	// array of leds blink 3 times for 3 secs
+	LCD_clearScreen();
+	if (second_stop_flag == 1)
+	{
+		second_stop_flag = 5;
+		first_stop_flag = 5;
+		LCD_displayString("Stopped!");
+		Delay_MS(2000);
+		LCD_clearScreen();
+		LCD_displayString("A B C D");
+	}
+	else
+	{
+		second_stop_flag = 5;
+		first_stop_flag = 5;
+		LCD_displayString("Done!");
+		Delay_MS(2000);
+		LCD_clearScreen();
+		LCD_displayString("A B C D");
+		// ticks_num = 0;
+		// array of leds blink 3 times for 3 secs
+	}
+
 }
 
 /* Simple func to convert numbers from keypad which in form of string to integers */
@@ -91,23 +145,6 @@ uint16 string_to_int(uint8 ch)
 	}
 	return -1;
 }
-
-// switch (cook_time_flag)
-// 					{
-// 					// 10*60 60 : 10 1               600 60 : 10 1
-// 					case 1:
-// 						Cooking_Time_total += (string_to_int(Cooking_Time_digit) * 600);
-// 						break;
-// 					case 2:
-// 						Cooking_Time_total += (string_to_int(Cooking_Time_digit) * 60);
-// 						break;
-// 					case 3:
-// 						Cooking_Time_total += (string_to_int(Cooking_Time_digit) * 10);
-// 						break;
-// 					case 4:
-// 						Cooking_Time_total += (string_to_int(Cooking_Time_digit) * 1);
-// 						break;
-// 					}
 
 int main()
 {

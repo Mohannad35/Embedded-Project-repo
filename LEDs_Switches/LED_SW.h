@@ -42,18 +42,18 @@
 #define SWs_number				2
 #define LED_PORT 				GPIO_PORTA_BASE_ADDRESS
 #define LED_PORT_MASK 			PORT_A_MASK
-#define SW_PORT 				GPIO_PORTF_BASE_ADDRESS
-#define SW_PORT_MASK 			PORT_F_MASK
+#define SW_PORT 				GPIO_PORTA_BASE_ADDRESS
+#define SW_PORT_MASK 			PORT_A_MASK
 #define LED_PIN					4 							// PA4 (REDs)
-#define SW1_PIN					4							// PA3 (STOP)
-#define SW2_PIN					0							// PA2 (RESUME)
+#define SW1_PIN					3							// PA3 (STOP)
+#define SW2_PIN					2							// PA2 (RESUME)
 #define SW_INTERRUPT_PRIORITY 	2
-#define SW_EN_BIT_NUM 			30							// PORTA (30 for F, )
+#define SW_EN_BIT_NUM 			0							// PORTA (30 for F, )
 #define SW_EN_OFFSET 			NVIC_EN0_OFFSET 			// PORTA,B,C,D,E,F
-#define SW_PRI_OFFSET 			NVIC_PRI7_OFFSET 			// PORTF:PRI7, PORTA,B,C,D:PRI0, PORTE:PRI1
-#define SW_PRI_MASK				PRI_MASK_4N_2				// Bits 23:21 (4n+2)
-#define SW_PRI_SHIFT			PRI_SHIFT_4N_2				// Bits 23:21 (4n+2)
-#define SW_PRI_NUM_MASK			PRI_NUM_MASK_4N_2			// Bits 23:21 (4n+2)
+#define SW_PRI_OFFSET 			NVIC_PRI0_OFFSET 			// PORTF:PRI7, PORTA,B,C,D:PRI0, PORTE:PRI1
+#define SW_PRI_MASK				PRI_MASK_4N_0				// Bits 23:21 (4n+2)
+#define SW_PRI_SHIFT			PRI_SHIFT_4N_0				// Bits 23:21 (4n+2)
+#define SW_PRI_NUM_MASK			PRI_NUM_MASK_4N_0			// Bits 23:21 (4n+2)
 
 /*******************************************************************************
  *                            Functions Prototypes                             *

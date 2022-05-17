@@ -140,13 +140,83 @@
     "scope": null
   },
   {
+    "ID": "c:@F@GPIOPortA_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortA_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "28",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortA_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortB_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortB_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "31",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortB_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "34",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortD_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortD_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "37",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortD_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortE_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortE_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "40",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortE_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@GPIOPortF_Handler",
     "What": "Function",
     "defdec": "Dec",
     "display": "void GPIOPortF_Handler(void)",
     "location": {
       "column": "13",
-      "line": "28",
+      "line": "43",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "GPIOPortF_Handler",
@@ -160,7 +230,7 @@
     "display": "void (*)(void)",
     "location": {
       "column": "16",
-      "line": "30",
+      "line": "45",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "intfunc",
@@ -174,7 +244,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "31",
+      "line": "46",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "members": [
@@ -185,12 +255,12 @@
         "display": "__fun",
         "location": {
           "column": "25",
-          "line": "31",
+          "line": "46",
           "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
         },
         "name": "__fun",
         "origin": "project_file",
-        "scope": "_anonymous_cstartup_M_c_31_9"
+        "scope": "_anonymous_cstartup_M_c_46_9"
       },
       {
         "ID": "c:@UA@intvec_elem@FI@__ptr",
@@ -199,12 +269,12 @@
         "display": "__ptr",
         "location": {
           "column": "39",
-          "line": "31",
+          "line": "46",
           "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
         },
         "name": "__ptr",
         "origin": "project_file",
-        "scope": "_anonymous_cstartup_M_c_31_9"
+        "scope": "_anonymous_cstartup_M_c_46_9"
       }
     ],
     "name": "",
@@ -218,7 +288,7 @@
     "display": "union intvec_elem",
     "location": {
       "column": "48",
-      "line": "31",
+      "line": "46",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "intvec_elem",
@@ -232,7 +302,7 @@
     "display": "__vector_table",
     "location": {
       "column": "19",
-      "line": "44",
+      "line": "59",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "__vector_table",
@@ -246,7 +316,7 @@
     "display": "void NMI_Handler(void)",
     "location": {
       "column": "13",
-      "line": "99",
+      "line": "114",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "NMI_Handler",
@@ -260,7 +330,7 @@
     "display": "void HardFault_Handler(void)",
     "location": {
       "column": "13",
-      "line": "101",
+      "line": "116",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "HardFault_Handler",
@@ -274,7 +344,7 @@
     "display": "void MemManage_Handler(void)",
     "location": {
       "column": "13",
-      "line": "103",
+      "line": "118",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "MemManage_Handler",
@@ -288,7 +358,7 @@
     "display": "void BusFault_Handler(void)",
     "location": {
       "column": "13",
-      "line": "105",
+      "line": "120",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "BusFault_Handler",
@@ -302,7 +372,7 @@
     "display": "void UsageFault_Handler(void)",
     "location": {
       "column": "13",
-      "line": "107",
+      "line": "122",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "UsageFault_Handler",
@@ -316,7 +386,7 @@
     "display": "void SVC_Handler(void)",
     "location": {
       "column": "13",
-      "line": "109",
+      "line": "124",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "SVC_Handler",
@@ -330,7 +400,7 @@
     "display": "void DebugMon_Handler(void)",
     "location": {
       "column": "13",
-      "line": "111",
+      "line": "126",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "DebugMon_Handler",
@@ -344,7 +414,7 @@
     "display": "void PendSV_Handler(void)",
     "location": {
       "column": "13",
-      "line": "113",
+      "line": "128",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "PendSV_Handler",
@@ -358,10 +428,94 @@
     "display": "void SysTick_Handler(void)",
     "location": {
       "column": "13",
-      "line": "115",
+      "line": "130",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortA_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortA_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "134",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortA_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortB_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortB_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "136",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortB_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortC_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "138",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortD_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortD_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "140",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortD_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortE_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortE_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "142",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortE_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortF_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortF_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "144",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortF_Handler",
     "origin": "project_file",
     "scope": null
   },
@@ -372,7 +526,7 @@
     "display": "void __cmain(void)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "147",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "__cmain",
@@ -386,7 +540,7 @@
     "display": "void __iar_init_core(void)",
     "location": {
       "column": "13",
-      "line": "119",
+      "line": "148",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "__iar_init_core",
@@ -400,7 +554,7 @@
     "display": "void __iar_init_vfp(void)",
     "location": {
       "column": "13",
-      "line": "120",
+      "line": "149",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "__iar_init_vfp",
@@ -414,7 +568,7 @@
     "display": "void __iar_program_start(void)",
     "location": {
       "column": "6",
-      "line": "123",
+      "line": "152",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
     },
     "name": "__iar_program_start",
@@ -520,13 +674,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@563@macro@PORT_A_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@563@macro@NVIC_BASE_ADDRESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_BASE_ADDRESS",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_BASE_ADDRESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@604@macro@PORT_A_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_A_MASK",
     "location": {
       "column": "9",
-      "line": "14",
+      "line": "15",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_A_MASK",
@@ -534,13 +702,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@591@macro@PORT_B_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@632@macro@PORT_B_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_B_MASK",
     "location": {
       "column": "9",
-      "line": "15",
+      "line": "16",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_B_MASK",
@@ -548,13 +716,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@619@macro@PORT_C_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@660@macro@PORT_C_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_C_MASK",
     "location": {
       "column": "9",
-      "line": "16",
+      "line": "17",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_C_MASK",
@@ -562,13 +730,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@647@macro@PORT_D_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@688@macro@PORT_D_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_D_MASK",
     "location": {
       "column": "9",
-      "line": "17",
+      "line": "18",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_D_MASK",
@@ -576,13 +744,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@675@macro@PORT_E_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@716@macro@PORT_E_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_MASK",
     "location": {
       "column": "9",
-      "line": "18",
+      "line": "19",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_E_MASK",
@@ -590,13 +758,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@703@macro@PORT_F_MASK",
+    "ID": "c:tm4c123gh6pm_registers.h@744@macro@PORT_F_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_F_MASK",
     "location": {
       "column": "9",
-      "line": "19",
+      "line": "20",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_F_MASK",
@@ -604,13 +772,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@772@macro@PORT_DATA_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@813@macro@PORT_DATA_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DATA_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "22",
+      "line": "23",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_DATA_REG_OFFSET",
@@ -618,13 +786,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@810@macro@PORT_DIR_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@851@macro@PORT_DIR_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DIR_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "24",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_DIR_REG_OFFSET",
@@ -632,13 +800,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@848@macro@PORT_ALT_FUNC_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@889@macro@PORT_ALT_FUNC_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_ALT_FUNC_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "24",
+      "line": "25",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_ALT_FUNC_REG_OFFSET",
@@ -646,13 +814,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@889@macro@PORT_PULL_UP_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@930@macro@PORT_PULL_UP_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PULL_UP_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "25",
+      "line": "26",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_PULL_UP_REG_OFFSET",
@@ -660,13 +828,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@930@macro@PORT_PULL_DOWN_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@971@macro@PORT_PULL_DOWN_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PULL_DOWN_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "26",
+      "line": "27",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_PULL_DOWN_REG_OFFSET",
@@ -674,13 +842,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@972@macro@PORT_DIGITAL_ENABLE_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@1013@macro@PORT_DIGITAL_ENABLE_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DIGITAL_ENABLE_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "27",
+      "line": "28",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_DIGITAL_ENABLE_REG_OFFSET",
@@ -688,13 +856,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1018@macro@PORT_LOCK_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@1059@macro@PORT_LOCK_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_LOCK_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "28",
+      "line": "29",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_LOCK_REG_OFFSET",
@@ -702,13 +870,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1056@macro@PORT_COMMIT_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@1097@macro@PORT_COMMIT_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_COMMIT_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "29",
+      "line": "30",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_COMMIT_REG_OFFSET",
@@ -716,13 +884,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1096@macro@PORT_ANALOG_MODE_SEL_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@1137@macro@PORT_ANALOG_MODE_SEL_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_ANALOG_MODE_SEL_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "30",
+      "line": "31",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_ANALOG_MODE_SEL_REG_OFFSET",
@@ -730,13 +898,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1143@macro@PORT_CTL_REG_OFFSET",
+    "ID": "c:tm4c123gh6pm_registers.h@1184@macro@PORT_CTL_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_CTL_REG_OFFSET",
     "location": {
       "column": "9",
-      "line": "31",
+      "line": "32",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PORT_CTL_REG_OFFSET",
@@ -744,13 +912,97 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1249@macro@SYSCTL_REGCGC2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@1222@macro@PORT_IS_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_IS_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_IS_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1256@macro@PORT_IBE_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_IBE_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_IBE_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1291@macro@PORT_IEV_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_IEV_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_IEV_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1326@macro@PORT_IM_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_IM_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_IM_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1360@macro@PORT_RIS_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_RIS_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_RIS_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1395@macro@PORT_ICR_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_ICR_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "PORT_ICR_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@1500@macro@SYSCTL_REGCGC2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_REGCGC2_REG",
     "location": {
       "column": "9",
-      "line": "34",
+      "line": "42",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSCTL_REGCGC2_REG",
@@ -758,13 +1010,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1505@macro@GPIO_PORTA_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@1756@macro@GPIO_PORTA_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_DATA_REG",
     "location": {
       "column": "9",
-      "line": "39",
+      "line": "47",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_DATA_REG",
@@ -772,13 +1024,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1575@macro@GPIO_PORTA_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@1826@macro@GPIO_PORTA_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_DIR_REG",
     "location": {
       "column": "9",
-      "line": "40",
+      "line": "48",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_DIR_REG",
@@ -786,13 +1038,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1645@macro@GPIO_PORTA_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@1896@macro@GPIO_PORTA_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "41",
+      "line": "49",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_AFSEL_REG",
@@ -800,13 +1052,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1715@macro@GPIO_PORTA_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@1966@macro@GPIO_PORTA_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_PUR_REG",
     "location": {
       "column": "9",
-      "line": "42",
+      "line": "50",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_PUR_REG",
@@ -814,13 +1066,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1785@macro@GPIO_PORTA_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2036@macro@GPIO_PORTA_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_PDR_REG",
     "location": {
       "column": "9",
-      "line": "43",
+      "line": "51",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_PDR_REG",
@@ -828,13 +1080,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1855@macro@GPIO_PORTA_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2106@macro@GPIO_PORTA_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_DEN_REG",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "52",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_DEN_REG",
@@ -842,13 +1094,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1925@macro@GPIO_PORTA_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2176@macro@GPIO_PORTA_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "45",
+      "line": "53",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_LOCK_REG",
@@ -856,13 +1108,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@1995@macro@GPIO_PORTA_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2246@macro@GPIO_PORTA_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_CR_REG",
     "location": {
       "column": "9",
-      "line": "46",
+      "line": "54",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_CR_REG",
@@ -870,13 +1122,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2065@macro@GPIO_PORTA_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2316@macro@GPIO_PORTA_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "47",
+      "line": "55",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_AMSEL_REG",
@@ -884,13 +1136,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2135@macro@GPIO_PORTA_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2386@macro@GPIO_PORTA_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "48",
+      "line": "56",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_PCTL_REG",
@@ -898,13 +1150,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2391@macro@GPIO_PORTB_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2642@macro@GPIO_PORTB_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_DATA_REG",
     "location": {
       "column": "9",
-      "line": "53",
+      "line": "61",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_DATA_REG",
@@ -912,13 +1164,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2461@macro@GPIO_PORTB_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2712@macro@GPIO_PORTB_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_DIR_REG",
     "location": {
       "column": "9",
-      "line": "54",
+      "line": "62",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_DIR_REG",
@@ -926,13 +1178,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2531@macro@GPIO_PORTB_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2782@macro@GPIO_PORTB_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "55",
+      "line": "63",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_AFSEL_REG",
@@ -940,13 +1192,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2601@macro@GPIO_PORTB_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2852@macro@GPIO_PORTB_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_PUR_REG",
     "location": {
       "column": "9",
-      "line": "56",
+      "line": "64",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_PUR_REG",
@@ -954,13 +1206,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2671@macro@GPIO_PORTB_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2922@macro@GPIO_PORTB_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_PDR_REG",
     "location": {
       "column": "9",
-      "line": "57",
+      "line": "65",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_PDR_REG",
@@ -968,13 +1220,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2741@macro@GPIO_PORTB_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@2992@macro@GPIO_PORTB_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_DEN_REG",
     "location": {
       "column": "9",
-      "line": "58",
+      "line": "66",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_DEN_REG",
@@ -982,13 +1234,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2811@macro@GPIO_PORTB_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3062@macro@GPIO_PORTB_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "59",
+      "line": "67",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_LOCK_REG",
@@ -996,13 +1248,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2881@macro@GPIO_PORTB_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3132@macro@GPIO_PORTB_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_CR_REG",
     "location": {
       "column": "9",
-      "line": "60",
+      "line": "68",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_CR_REG",
@@ -1010,13 +1262,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@2951@macro@GPIO_PORTB_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3202@macro@GPIO_PORTB_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "61",
+      "line": "69",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_AMSEL_REG",
@@ -1024,13 +1276,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3021@macro@GPIO_PORTB_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3272@macro@GPIO_PORTB_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "62",
+      "line": "70",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_PCTL_REG",
@@ -1038,13 +1290,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3277@macro@GPIO_PORTC_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3528@macro@GPIO_PORTC_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_DATA_REG",
     "location": {
       "column": "9",
-      "line": "67",
+      "line": "75",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_DATA_REG",
@@ -1052,13 +1304,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3347@macro@GPIO_PORTC_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3598@macro@GPIO_PORTC_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_DIR_REG",
     "location": {
       "column": "9",
-      "line": "68",
+      "line": "76",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_DIR_REG",
@@ -1066,13 +1318,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3417@macro@GPIO_PORTC_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3668@macro@GPIO_PORTC_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "69",
+      "line": "77",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_AFSEL_REG",
@@ -1080,13 +1332,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3487@macro@GPIO_PORTC_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3738@macro@GPIO_PORTC_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_PUR_REG",
     "location": {
       "column": "9",
-      "line": "70",
+      "line": "78",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_PUR_REG",
@@ -1094,13 +1346,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3557@macro@GPIO_PORTC_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3808@macro@GPIO_PORTC_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_PDR_REG",
     "location": {
       "column": "9",
-      "line": "71",
+      "line": "79",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_PDR_REG",
@@ -1108,13 +1360,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3627@macro@GPIO_PORTC_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3878@macro@GPIO_PORTC_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_DEN_REG",
     "location": {
       "column": "9",
-      "line": "72",
+      "line": "80",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_DEN_REG",
@@ -1122,13 +1374,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3697@macro@GPIO_PORTC_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@3948@macro@GPIO_PORTC_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "73",
+      "line": "81",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_LOCK_REG",
@@ -1136,13 +1388,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3767@macro@GPIO_PORTC_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4018@macro@GPIO_PORTC_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_CR_REG",
     "location": {
       "column": "9",
-      "line": "74",
+      "line": "82",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_CR_REG",
@@ -1150,13 +1402,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3837@macro@GPIO_PORTC_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4088@macro@GPIO_PORTC_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "75",
+      "line": "83",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_AMSEL_REG",
@@ -1164,13 +1416,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@3907@macro@GPIO_PORTC_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4158@macro@GPIO_PORTC_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "76",
+      "line": "84",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_PCTL_REG",
@@ -1178,13 +1430,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4163@macro@GPIO_PORTD_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4414@macro@GPIO_PORTD_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_DATA_REG",
     "location": {
       "column": "9",
-      "line": "81",
+      "line": "89",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_DATA_REG",
@@ -1192,13 +1444,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4233@macro@GPIO_PORTD_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4484@macro@GPIO_PORTD_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_DIR_REG",
     "location": {
       "column": "9",
-      "line": "82",
+      "line": "90",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_DIR_REG",
@@ -1206,13 +1458,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4303@macro@GPIO_PORTD_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4554@macro@GPIO_PORTD_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "83",
+      "line": "91",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_AFSEL_REG",
@@ -1220,13 +1472,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4373@macro@GPIO_PORTD_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4624@macro@GPIO_PORTD_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_PUR_REG",
     "location": {
       "column": "9",
-      "line": "84",
+      "line": "92",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_PUR_REG",
@@ -1234,13 +1486,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4443@macro@GPIO_PORTD_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4694@macro@GPIO_PORTD_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_PDR_REG",
     "location": {
       "column": "9",
-      "line": "85",
+      "line": "93",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_PDR_REG",
@@ -1248,13 +1500,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4513@macro@GPIO_PORTD_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4764@macro@GPIO_PORTD_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_DEN_REG",
     "location": {
       "column": "9",
-      "line": "86",
+      "line": "94",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_DEN_REG",
@@ -1262,13 +1514,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4583@macro@GPIO_PORTD_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4834@macro@GPIO_PORTD_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "87",
+      "line": "95",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_LOCK_REG",
@@ -1276,13 +1528,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4653@macro@GPIO_PORTD_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4904@macro@GPIO_PORTD_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_CR_REG",
     "location": {
       "column": "9",
-      "line": "88",
+      "line": "96",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_CR_REG",
@@ -1290,13 +1542,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4723@macro@GPIO_PORTD_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@4974@macro@GPIO_PORTD_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "89",
+      "line": "97",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_AMSEL_REG",
@@ -1304,13 +1556,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@4793@macro@GPIO_PORTD_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5044@macro@GPIO_PORTD_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "90",
+      "line": "98",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_PCTL_REG",
@@ -1318,13 +1570,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5049@macro@GPIO_PORTE_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5300@macro@GPIO_PORTE_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_DATA_REG",
     "location": {
       "column": "9",
-      "line": "95",
+      "line": "103",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_DATA_REG",
@@ -1332,13 +1584,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5119@macro@GPIO_PORTE_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5370@macro@GPIO_PORTE_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_DIR_REG",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "104",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_DIR_REG",
@@ -1346,13 +1598,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5189@macro@GPIO_PORTE_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5440@macro@GPIO_PORTE_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "97",
+      "line": "105",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_AFSEL_REG",
@@ -1360,13 +1612,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5259@macro@GPIO_PORTE_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5510@macro@GPIO_PORTE_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_PUR_REG",
     "location": {
       "column": "9",
-      "line": "98",
+      "line": "106",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_PUR_REG",
@@ -1374,13 +1626,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5329@macro@GPIO_PORTE_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5580@macro@GPIO_PORTE_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_PDR_REG",
     "location": {
       "column": "9",
-      "line": "99",
+      "line": "107",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_PDR_REG",
@@ -1388,13 +1640,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5399@macro@GPIO_PORTE_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5650@macro@GPIO_PORTE_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_DEN_REG",
     "location": {
       "column": "9",
-      "line": "100",
+      "line": "108",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_DEN_REG",
@@ -1402,13 +1654,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5469@macro@GPIO_PORTE_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5720@macro@GPIO_PORTE_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "101",
+      "line": "109",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_LOCK_REG",
@@ -1416,13 +1668,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5539@macro@GPIO_PORTE_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5790@macro@GPIO_PORTE_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_CR_REG",
     "location": {
       "column": "9",
-      "line": "102",
+      "line": "110",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_CR_REG",
@@ -1430,13 +1682,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5609@macro@GPIO_PORTE_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5860@macro@GPIO_PORTE_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "103",
+      "line": "111",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_AMSEL_REG",
@@ -1444,13 +1696,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5679@macro@GPIO_PORTE_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@5930@macro@GPIO_PORTE_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "104",
+      "line": "112",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_PCTL_REG",
@@ -1458,13 +1710,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@5935@macro@GPIO_PORTF_DATA_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6186@macro@GPIO_PORTF_DATA_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_DATA_REG",
     "location": {
       "column": "9",
-      "line": "109",
+      "line": "117",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_DATA_REG",
@@ -1472,13 +1724,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6005@macro@GPIO_PORTF_DIR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6256@macro@GPIO_PORTF_DIR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_DIR_REG",
     "location": {
       "column": "9",
-      "line": "110",
+      "line": "118",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_DIR_REG",
@@ -1486,13 +1738,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6075@macro@GPIO_PORTF_AFSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6326@macro@GPIO_PORTF_AFSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_AFSEL_REG",
     "location": {
       "column": "9",
-      "line": "111",
+      "line": "119",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_AFSEL_REG",
@@ -1500,13 +1752,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6145@macro@GPIO_PORTF_PUR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6396@macro@GPIO_PORTF_PUR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_PUR_REG",
     "location": {
       "column": "9",
-      "line": "112",
+      "line": "120",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_PUR_REG",
@@ -1514,13 +1766,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6215@macro@GPIO_PORTF_PDR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6466@macro@GPIO_PORTF_PDR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_PDR_REG",
     "location": {
       "column": "9",
-      "line": "113",
+      "line": "121",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_PDR_REG",
@@ -1528,13 +1780,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6285@macro@GPIO_PORTF_DEN_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6536@macro@GPIO_PORTF_DEN_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_DEN_REG",
     "location": {
       "column": "9",
-      "line": "114",
+      "line": "122",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_DEN_REG",
@@ -1542,13 +1794,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6355@macro@GPIO_PORTF_LOCK_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6606@macro@GPIO_PORTF_LOCK_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_LOCK_REG",
     "location": {
       "column": "9",
-      "line": "115",
+      "line": "123",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_LOCK_REG",
@@ -1556,13 +1808,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6425@macro@GPIO_PORTF_CR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6676@macro@GPIO_PORTF_CR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_CR_REG",
     "location": {
       "column": "9",
-      "line": "116",
+      "line": "124",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_CR_REG",
@@ -1570,13 +1822,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6495@macro@GPIO_PORTF_AMSEL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6746@macro@GPIO_PORTF_AMSEL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_AMSEL_REG",
     "location": {
       "column": "9",
-      "line": "117",
+      "line": "125",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_AMSEL_REG",
@@ -1584,13 +1836,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6565@macro@GPIO_PORTF_PCTL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@6816@macro@GPIO_PORTF_PCTL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_PCTL_REG",
     "location": {
       "column": "9",
-      "line": "118",
+      "line": "126",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_PCTL_REG",
@@ -1598,13 +1850,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6822@macro@SYSTICK_CTRL_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7073@macro@SYSTICK_CTRL_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSTICK_CTRL_REG",
     "location": {
       "column": "9",
-      "line": "123",
+      "line": "131",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSTICK_CTRL_REG",
@@ -1612,13 +1864,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6892@macro@SYSTICK_RELOAD_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7143@macro@SYSTICK_RELOAD_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSTICK_RELOAD_REG",
     "location": {
       "column": "9",
-      "line": "124",
+      "line": "132",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSTICK_RELOAD_REG",
@@ -1626,13 +1878,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@6962@macro@SYSTICK_CURRENT_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7213@macro@SYSTICK_CURRENT_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSTICK_CURRENT_REG",
     "location": {
       "column": "9",
-      "line": "125",
+      "line": "133",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSTICK_CURRENT_REG",
@@ -1640,13 +1892,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7209@macro@SYSCTL_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7460@macro@SYSCTL_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_RIS_REG",
     "location": {
       "column": "9",
-      "line": "130",
+      "line": "138",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSCTL_RIS_REG",
@@ -1654,13 +1906,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7279@macro@SYSCTL_RCC_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7530@macro@SYSCTL_RCC_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_RCC_REG",
     "location": {
       "column": "9",
-      "line": "131",
+      "line": "139",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSCTL_RCC_REG",
@@ -1668,13 +1920,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7349@macro@SYSCTL_RCC2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7600@macro@SYSCTL_RCC2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_RCC2_REG",
     "location": {
       "column": "9",
-      "line": "132",
+      "line": "140",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "SYSCTL_RCC2_REG",
@@ -1682,13 +1934,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7610@macro@NVIC_PRI0_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7861@macro@NVIC_PRI0_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI0_REG",
     "location": {
       "column": "9",
-      "line": "137",
+      "line": "145",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI0_REG",
@@ -1696,13 +1948,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7680@macro@NVIC_PRI1_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@7931@macro@NVIC_PRI1_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI1_REG",
     "location": {
       "column": "9",
-      "line": "138",
+      "line": "146",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI1_REG",
@@ -1710,13 +1962,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7750@macro@NVIC_PRI2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8001@macro@NVIC_PRI2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI2_REG",
     "location": {
       "column": "9",
-      "line": "139",
+      "line": "147",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI2_REG",
@@ -1724,13 +1976,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7820@macro@NVIC_PRI3_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8071@macro@NVIC_PRI3_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI3_REG",
     "location": {
       "column": "9",
-      "line": "140",
+      "line": "148",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI3_REG",
@@ -1738,13 +1990,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7892@macro@NVIC_PRI4_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8141@macro@NVIC_PRI0_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI0_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "149",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI0_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8175@macro@NVIC_PRI1_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI1_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "150",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI1_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8209@macro@NVIC_PRI2_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI2_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "151",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI2_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8243@macro@NVIC_PRI3_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI3_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "152",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI3_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8279@macro@NVIC_PRI4_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI4_REG",
     "location": {
       "column": "9",
-      "line": "142",
+      "line": "154",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI4_REG",
@@ -1752,13 +2060,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@7962@macro@NVIC_PRI5_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8349@macro@NVIC_PRI5_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI5_REG",
     "location": {
       "column": "9",
-      "line": "143",
+      "line": "155",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI5_REG",
@@ -1766,13 +2074,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8032@macro@NVIC_PRI6_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8419@macro@NVIC_PRI6_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI6_REG",
     "location": {
       "column": "9",
-      "line": "144",
+      "line": "156",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI6_REG",
@@ -1780,13 +2088,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8102@macro@NVIC_PRI7_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8489@macro@NVIC_PRI7_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI7_REG",
     "location": {
       "column": "9",
-      "line": "145",
+      "line": "157",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI7_REG",
@@ -1794,13 +2102,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8174@macro@NVIC_PRI8_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8559@macro@NVIC_PRI4_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI4_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "158",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI4_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8593@macro@NVIC_PRI5_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI5_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "159",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI5_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8627@macro@NVIC_PRI6_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI6_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "160",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI6_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8661@macro@NVIC_PRI7_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI7_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "161",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI7_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@8697@macro@NVIC_PRI8_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI8_REG",
     "location": {
       "column": "9",
-      "line": "147",
+      "line": "163",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI8_REG",
@@ -1808,13 +2172,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8244@macro@NVIC_PRI9_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8767@macro@NVIC_PRI9_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI9_REG",
     "location": {
       "column": "9",
-      "line": "148",
+      "line": "164",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI9_REG",
@@ -1822,13 +2186,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8314@macro@NVIC_PRI10_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8837@macro@NVIC_PRI10_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI10_REG",
     "location": {
       "column": "9",
-      "line": "149",
+      "line": "165",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI10_REG",
@@ -1836,13 +2200,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8384@macro@NVIC_PRI11_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8907@macro@NVIC_PRI11_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI11_REG",
     "location": {
       "column": "9",
-      "line": "150",
+      "line": "166",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI11_REG",
@@ -1850,13 +2214,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8456@macro@NVIC_PRI12_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@8977@macro@NVIC_PRI8_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI8_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "167",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI8_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9011@macro@NVIC_PRI9_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI9_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "168",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI9_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9045@macro@NVIC_PRI10_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI10_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "169",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI10_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9080@macro@NVIC_PRI11_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI11_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI11_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9117@macro@NVIC_PRI12_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI12_REG",
     "location": {
       "column": "9",
-      "line": "152",
+      "line": "172",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI12_REG",
@@ -1864,13 +2284,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8526@macro@NVIC_PRI13_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9187@macro@NVIC_PRI13_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI13_REG",
     "location": {
       "column": "9",
-      "line": "153",
+      "line": "173",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI13_REG",
@@ -1878,13 +2298,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8596@macro@NVIC_PRI14_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9257@macro@NVIC_PRI14_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI14_REG",
     "location": {
       "column": "9",
-      "line": "154",
+      "line": "174",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI14_REG",
@@ -1892,13 +2312,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8666@macro@NVIC_PRI15_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9327@macro@NVIC_PRI15_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI15_REG",
     "location": {
       "column": "9",
-      "line": "155",
+      "line": "175",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI15_REG",
@@ -1906,13 +2326,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8738@macro@NVIC_PRI16_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9397@macro@NVIC_PRI12_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI12_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "176",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI12_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9432@macro@NVIC_PRI13_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI13_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "177",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI13_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9467@macro@NVIC_PRI14_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI14_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "178",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI14_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9502@macro@NVIC_PRI15_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI15_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "179",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI15_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9539@macro@NVIC_PRI16_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI16_REG",
     "location": {
       "column": "9",
-      "line": "157",
+      "line": "181",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI16_REG",
@@ -1920,13 +2396,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8808@macro@NVIC_PRI17_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9609@macro@NVIC_PRI17_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI17_REG",
     "location": {
       "column": "9",
-      "line": "158",
+      "line": "182",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI17_REG",
@@ -1934,13 +2410,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8878@macro@NVIC_PRI18_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9679@macro@NVIC_PRI18_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI18_REG",
     "location": {
       "column": "9",
-      "line": "159",
+      "line": "183",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI18_REG",
@@ -1948,13 +2424,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@8948@macro@NVIC_PRI19_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9749@macro@NVIC_PRI19_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI19_REG",
     "location": {
       "column": "9",
-      "line": "160",
+      "line": "184",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI19_REG",
@@ -1962,13 +2438,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9020@macro@NVIC_PRI20_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@9819@macro@NVIC_PRI16_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI16_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "185",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI16_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9854@macro@NVIC_PRI17_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI17_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "186",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI17_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9889@macro@NVIC_PRI18_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI18_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "187",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI18_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9924@macro@NVIC_PRI19_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI19_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "188",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI19_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@9961@macro@NVIC_PRI20_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI20_REG",
     "location": {
       "column": "9",
-      "line": "162",
+      "line": "190",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI20_REG",
@@ -1976,13 +2508,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9090@macro@NVIC_PRI21_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10031@macro@NVIC_PRI21_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI21_REG",
     "location": {
       "column": "9",
-      "line": "163",
+      "line": "191",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI21_REG",
@@ -1990,13 +2522,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9160@macro@NVIC_PRI22_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10101@macro@NVIC_PRI22_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI22_REG",
     "location": {
       "column": "9",
-      "line": "164",
+      "line": "192",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI22_REG",
@@ -2004,13 +2536,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9230@macro@NVIC_PRI23_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10171@macro@NVIC_PRI23_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI23_REG",
     "location": {
       "column": "9",
-      "line": "165",
+      "line": "193",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI23_REG",
@@ -2018,13 +2550,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9302@macro@NVIC_PRI24_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10241@macro@NVIC_PRI20_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI20_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "194",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI20_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10276@macro@NVIC_PRI21_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI21_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "195",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI21_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10311@macro@NVIC_PRI22_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI22_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "196",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI22_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10346@macro@NVIC_PRI23_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI23_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "197",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI23_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10383@macro@NVIC_PRI24_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI24_REG",
     "location": {
       "column": "9",
-      "line": "167",
+      "line": "199",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI24_REG",
@@ -2032,13 +2620,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9372@macro@NVIC_PRI25_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10453@macro@NVIC_PRI25_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI25_REG",
     "location": {
       "column": "9",
-      "line": "168",
+      "line": "200",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI25_REG",
@@ -2046,13 +2634,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9442@macro@NVIC_PRI26_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10523@macro@NVIC_PRI26_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI26_REG",
     "location": {
       "column": "9",
-      "line": "169",
+      "line": "201",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI26_REG",
@@ -2060,13 +2648,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9512@macro@NVIC_PRI27_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10593@macro@NVIC_PRI27_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI27_REG",
     "location": {
       "column": "9",
-      "line": "170",
+      "line": "202",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI27_REG",
@@ -2074,13 +2662,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9584@macro@NVIC_PRI28_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10663@macro@NVIC_PRI24_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI24_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "203",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI24_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10698@macro@NVIC_PRI25_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI25_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "204",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI25_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10733@macro@NVIC_PRI26_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI26_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "205",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI26_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10768@macro@NVIC_PRI27_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI27_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "206",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI27_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@10805@macro@NVIC_PRI28_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI28_REG",
     "location": {
       "column": "9",
-      "line": "172",
+      "line": "208",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI28_REG",
@@ -2088,13 +2732,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9654@macro@NVIC_PRI29_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10875@macro@NVIC_PRI29_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI29_REG",
     "location": {
       "column": "9",
-      "line": "173",
+      "line": "209",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI29_REG",
@@ -2102,13 +2746,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9724@macro@NVIC_PRI30_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@10945@macro@NVIC_PRI30_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI30_REG",
     "location": {
       "column": "9",
-      "line": "174",
+      "line": "210",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI30_REG",
@@ -2116,13 +2760,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9794@macro@NVIC_PRI31_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11015@macro@NVIC_PRI31_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI31_REG",
     "location": {
       "column": "9",
-      "line": "175",
+      "line": "211",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI31_REG",
@@ -2130,13 +2774,69 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9866@macro@NVIC_PRI32_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11085@macro@NVIC_PRI28_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI28_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "212",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI28_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11120@macro@NVIC_PRI29_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI29_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "213",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI29_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11155@macro@NVIC_PRI30_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI30_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "214",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI30_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11190@macro@NVIC_PRI31_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI31_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "215",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI31_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11227@macro@NVIC_PRI32_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI32_REG",
     "location": {
       "column": "9",
-      "line": "177",
+      "line": "217",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI32_REG",
@@ -2144,13 +2844,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@9936@macro@NVIC_PRI33_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11297@macro@NVIC_PRI33_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI33_REG",
     "location": {
       "column": "9",
-      "line": "178",
+      "line": "218",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI33_REG",
@@ -2158,13 +2858,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10006@macro@NVIC_PRI34_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11367@macro@NVIC_PRI34_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_PRI34_REG",
     "location": {
       "column": "9",
-      "line": "179",
+      "line": "219",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_PRI34_REG",
@@ -2172,13 +2872,55 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10294@macro@NVIC_EN0_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11437@macro@NVIC_PRI32_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI32_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "220",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI32_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11472@macro@NVIC_PRI33_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI33_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "221",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI33_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11507@macro@NVIC_PRI34_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_PRI34_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "222",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_PRI34_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11760@macro@NVIC_EN0_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_EN0_REG",
     "location": {
       "column": "9",
-      "line": "185",
+      "line": "228",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_EN0_REG",
@@ -2186,13 +2928,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10394@macro@NVIC_EN1_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11826@macro@NVIC_EN0_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_EN0_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "229",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_EN0_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@11895@macro@NVIC_EN1_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_EN1_REG",
     "location": {
       "column": "9",
-      "line": "187",
+      "line": "232",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_EN1_REG",
@@ -2200,13 +2956,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10494@macro@NVIC_EN2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@11961@macro@NVIC_EN1_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_EN1_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "233",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_EN1_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12030@macro@NVIC_EN2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_EN2_REG",
     "location": {
       "column": "9",
-      "line": "189",
+      "line": "236",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_EN2_REG",
@@ -2214,13 +2984,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10595@macro@NVIC_EN3_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12096@macro@NVIC_EN2_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_EN2_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "237",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_EN2_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12166@macro@NVIC_EN3_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_EN3_REG",
     "location": {
       "column": "9",
-      "line": "191",
+      "line": "240",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_EN3_REG",
@@ -2228,13 +3012,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10696@macro@NVIC_EN4_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12232@macro@NVIC_EN3_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_EN3_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "241",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_EN3_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12302@macro@NVIC_EN4_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_EN4_REG",
     "location": {
       "column": "9",
-      "line": "193",
+      "line": "244",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_EN4_REG",
@@ -2242,13 +3040,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@10948@macro@NVIC_DIS0_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12368@macro@NVIC_EN4_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_EN4_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "245",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_EN4_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12587@macro@NVIC_DIS0_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_DIS0_REG",
     "location": {
       "column": "9",
-      "line": "198",
+      "line": "250",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_DIS0_REG",
@@ -2256,13 +3068,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11015@macro@NVIC_DIS1_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12654@macro@NVIC_DIS0_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_DIS0_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "251",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_DIS0_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12688@macro@NVIC_DIS1_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_DIS1_REG",
     "location": {
       "column": "9",
-      "line": "199",
+      "line": "252",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_DIS1_REG",
@@ -2270,13 +3096,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11082@macro@NVIC_DIS2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12755@macro@NVIC_DIS1_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_DIS1_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "253",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_DIS1_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12789@macro@NVIC_DIS2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_DIS2_REG",
     "location": {
       "column": "9",
-      "line": "200",
+      "line": "254",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_DIS2_REG",
@@ -2284,13 +3124,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11149@macro@NVIC_DIS3_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12856@macro@NVIC_DIS2_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_DIS2_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "255",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_DIS2_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12890@macro@NVIC_DIS3_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_DIS3_REG",
     "location": {
       "column": "9",
-      "line": "201",
+      "line": "256",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_DIS3_REG",
@@ -2298,13 +3152,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11216@macro@NVIC_DIS4_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@12957@macro@NVIC_DIS3_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_DIS3_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "257",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_DIS3_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@12991@macro@NVIC_DIS4_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_DIS4_REG",
     "location": {
       "column": "9",
-      "line": "202",
+      "line": "258",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_DIS4_REG",
@@ -2312,13 +3180,27 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11502@macro@GPIO_PORTA_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13058@macro@NVIC_DIS4_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_DIS4_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "259",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
+    },
+    "name": "NVIC_DIS4_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:tm4c123gh6pm_registers.h@13311@macro@GPIO_PORTA_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_IS_REG",
     "location": {
       "column": "9",
-      "line": "207",
+      "line": "264",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_IS_REG",
@@ -2326,13 +3208,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11572@macro@GPIO_PORTB_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13381@macro@GPIO_PORTB_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_IS_REG",
     "location": {
       "column": "9",
-      "line": "208",
+      "line": "265",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_IS_REG",
@@ -2340,13 +3222,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11642@macro@GPIO_PORTC_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13451@macro@GPIO_PORTC_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_IS_REG",
     "location": {
       "column": "9",
-      "line": "209",
+      "line": "266",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_IS_REG",
@@ -2354,13 +3236,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11712@macro@GPIO_PORTD_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13521@macro@GPIO_PORTD_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_IS_REG",
     "location": {
       "column": "9",
-      "line": "210",
+      "line": "267",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_IS_REG",
@@ -2368,13 +3250,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11782@macro@GPIO_PORTE_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13591@macro@GPIO_PORTE_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_IS_REG",
     "location": {
       "column": "9",
-      "line": "211",
+      "line": "268",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_IS_REG",
@@ -2382,13 +3264,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@11852@macro@GPIO_PORTF_IS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13661@macro@GPIO_PORTF_IS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_IS_REG",
     "location": {
       "column": "9",
-      "line": "212",
+      "line": "269",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_IS_REG",
@@ -2396,13 +3278,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12159@macro@GPIO_PORTA_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@13968@macro@GPIO_PORTA_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_IBE_REG",
     "location": {
       "column": "9",
-      "line": "217",
+      "line": "274",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_IBE_REG",
@@ -2410,13 +3292,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12230@macro@GPIO_PORTB_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14039@macro@GPIO_PORTB_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_IBE_REG",
     "location": {
       "column": "9",
-      "line": "218",
+      "line": "275",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_IBE_REG",
@@ -2424,13 +3306,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12301@macro@GPIO_PORTC_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14110@macro@GPIO_PORTC_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_IBE_REG",
     "location": {
       "column": "9",
-      "line": "219",
+      "line": "276",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_IBE_REG",
@@ -2438,13 +3320,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12372@macro@GPIO_PORTD_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14181@macro@GPIO_PORTD_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_IBE_REG",
     "location": {
       "column": "9",
-      "line": "220",
+      "line": "277",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_IBE_REG",
@@ -2452,13 +3334,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12443@macro@GPIO_PORTE_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14252@macro@GPIO_PORTE_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_IBE_REG",
     "location": {
       "column": "9",
-      "line": "221",
+      "line": "278",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_IBE_REG",
@@ -2466,13 +3348,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12514@macro@GPIO_PORTF_IBE_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14323@macro@GPIO_PORTF_IBE_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_IBE_REG",
     "location": {
       "column": "9",
-      "line": "222",
+      "line": "279",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_IBE_REG",
@@ -2480,13 +3362,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12805@macro@GPIO_PORTA_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14614@macro@GPIO_PORTA_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_IEV_REG",
     "location": {
       "column": "9",
-      "line": "227",
+      "line": "284",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_IEV_REG",
@@ -2494,13 +3376,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12876@macro@GPIO_PORTB_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14685@macro@GPIO_PORTB_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_IEV_REG",
     "location": {
       "column": "9",
-      "line": "228",
+      "line": "285",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_IEV_REG",
@@ -2508,13 +3390,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@12947@macro@GPIO_PORTC_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14756@macro@GPIO_PORTC_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_IEV_REG",
     "location": {
       "column": "9",
-      "line": "229",
+      "line": "286",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_IEV_REG",
@@ -2522,13 +3404,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13018@macro@GPIO_PORTD_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14827@macro@GPIO_PORTD_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_IEV_REG",
     "location": {
       "column": "9",
-      "line": "230",
+      "line": "287",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_IEV_REG",
@@ -2536,13 +3418,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13089@macro@GPIO_PORTE_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14898@macro@GPIO_PORTE_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_IEV_REG",
     "location": {
       "column": "9",
-      "line": "231",
+      "line": "288",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_IEV_REG",
@@ -2550,13 +3432,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13160@macro@GPIO_PORTF_IEV_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@14969@macro@GPIO_PORTF_IEV_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_IEV_REG",
     "location": {
       "column": "9",
-      "line": "232",
+      "line": "289",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_IEV_REG",
@@ -2564,13 +3446,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13463@macro@GPIO_PORTA_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15272@macro@GPIO_PORTA_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_IM_REG",
     "location": {
       "column": "9",
-      "line": "237",
+      "line": "294",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_IM_REG",
@@ -2578,13 +3460,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13533@macro@GPIO_PORTB_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15342@macro@GPIO_PORTB_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_IM_REG",
     "location": {
       "column": "9",
-      "line": "238",
+      "line": "295",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_IM_REG",
@@ -2592,13 +3474,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13603@macro@GPIO_PORTC_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15412@macro@GPIO_PORTC_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_IM_REG",
     "location": {
       "column": "9",
-      "line": "239",
+      "line": "296",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_IM_REG",
@@ -2606,13 +3488,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13673@macro@GPIO_PORTD_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15482@macro@GPIO_PORTD_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_IM_REG",
     "location": {
       "column": "9",
-      "line": "240",
+      "line": "297",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_IM_REG",
@@ -2620,13 +3502,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13743@macro@GPIO_PORTE_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15552@macro@GPIO_PORTE_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_IM_REG",
     "location": {
       "column": "9",
-      "line": "241",
+      "line": "298",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_IM_REG",
@@ -2634,13 +3516,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@13813@macro@GPIO_PORTF_IM_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15622@macro@GPIO_PORTF_IM_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_IM_REG",
     "location": {
       "column": "9",
-      "line": "242",
+      "line": "299",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_IM_REG",
@@ -2648,13 +3530,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14106@macro@GPIO_PORTA_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15915@macro@GPIO_PORTA_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_RIS_REG",
     "location": {
       "column": "9",
-      "line": "247",
+      "line": "304",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_RIS_REG",
@@ -2662,13 +3544,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14177@macro@GPIO_PORTB_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@15986@macro@GPIO_PORTB_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_RIS_REG",
     "location": {
       "column": "9",
-      "line": "248",
+      "line": "305",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_RIS_REG",
@@ -2676,13 +3558,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14248@macro@GPIO_PORTC_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16057@macro@GPIO_PORTC_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_RIS_REG",
     "location": {
       "column": "9",
-      "line": "249",
+      "line": "306",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_RIS_REG",
@@ -2690,13 +3572,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14319@macro@GPIO_PORTD_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16128@macro@GPIO_PORTD_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_RIS_REG",
     "location": {
       "column": "9",
-      "line": "250",
+      "line": "307",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_RIS_REG",
@@ -2704,13 +3586,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14390@macro@GPIO_PORTE_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16199@macro@GPIO_PORTE_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_RIS_REG",
     "location": {
       "column": "9",
-      "line": "251",
+      "line": "308",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_RIS_REG",
@@ -2718,13 +3600,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14461@macro@GPIO_PORTF_RIS_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16270@macro@GPIO_PORTF_RIS_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_RIS_REG",
     "location": {
       "column": "9",
-      "line": "252",
+      "line": "309",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_RIS_REG",
@@ -2732,13 +3614,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14761@macro@GPIO_PORTA_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16570@macro@GPIO_PORTA_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_ICR_REG",
     "location": {
       "column": "9",
-      "line": "257",
+      "line": "314",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTA_ICR_REG",
@@ -2746,13 +3628,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14832@macro@GPIO_PORTB_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16641@macro@GPIO_PORTB_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_ICR_REG",
     "location": {
       "column": "9",
-      "line": "258",
+      "line": "315",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTB_ICR_REG",
@@ -2760,13 +3642,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14903@macro@GPIO_PORTC_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16712@macro@GPIO_PORTC_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_ICR_REG",
     "location": {
       "column": "9",
-      "line": "259",
+      "line": "316",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTC_ICR_REG",
@@ -2774,13 +3656,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@14974@macro@GPIO_PORTD_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16783@macro@GPIO_PORTD_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_ICR_REG",
     "location": {
       "column": "9",
-      "line": "260",
+      "line": "317",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTD_ICR_REG",
@@ -2788,13 +3670,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15045@macro@GPIO_PORTE_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16854@macro@GPIO_PORTE_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_ICR_REG",
     "location": {
       "column": "9",
-      "line": "261",
+      "line": "318",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTE_ICR_REG",
@@ -2802,13 +3684,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15116@macro@GPIO_PORTF_ICR_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16925@macro@GPIO_PORTF_ICR_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_ICR_REG",
     "location": {
       "column": "9",
-      "line": "262",
+      "line": "319",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "GPIO_PORTF_ICR_REG",
@@ -2816,13 +3698,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15189@macro@NVIC_SYSTEM_PRI1_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@16998@macro@NVIC_SYSTEM_PRI1_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_SYSTEM_PRI1_REG",
     "location": {
       "column": "9",
-      "line": "264",
+      "line": "321",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_SYSTEM_PRI1_REG",
@@ -2830,13 +3712,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15259@macro@NVIC_SYSTEM_PRI2_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@17068@macro@NVIC_SYSTEM_PRI2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_SYSTEM_PRI2_REG",
     "location": {
       "column": "9",
-      "line": "265",
+      "line": "322",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_SYSTEM_PRI2_REG",
@@ -2844,13 +3726,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15329@macro@NVIC_SYSTEM_PRI3_REG",
+    "ID": "c:tm4c123gh6pm_registers.h@17138@macro@NVIC_SYSTEM_PRI3_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_SYSTEM_PRI3_REG",
     "location": {
       "column": "9",
-      "line": "266",
+      "line": "323",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_SYSTEM_PRI3_REG",
@@ -2858,13 +3740,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15399@macro@NVIC_SYSTEM_SYSHNDCTRL",
+    "ID": "c:tm4c123gh6pm_registers.h@17208@macro@NVIC_SYSTEM_SYSHNDCTRL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NVIC_SYSTEM_SYSHNDCTRL",
     "location": {
       "column": "9",
-      "line": "267",
+      "line": "324",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "NVIC_SYSTEM_SYSHNDCTRL",
@@ -2872,13 +3754,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15656@macro@PRI_MASK_4N_3",
+    "ID": "c:tm4c123gh6pm_registers.h@17491@macro@PRI_MASK_4N_3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_MASK_4N_3",
     "location": {
       "column": "9",
-      "line": "272",
+      "line": "330",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_MASK_4N_3",
@@ -2886,13 +3768,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15693@macro@PRI_NUM_MASK_4N_3",
+    "ID": "c:tm4c123gh6pm_registers.h@17528@macro@PRI_NUM_MASK_4N_3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_NUM_MASK_4N_3",
     "location": {
       "column": "9",
-      "line": "273",
+      "line": "331",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_NUM_MASK_4N_3",
@@ -2900,13 +3782,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@15733@macro@PRI_SHIFT_4N_3",
+    "ID": "c:tm4c123gh6pm_registers.h@17568@macro@PRI_SHIFT_4N_3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_SHIFT_4N_3",
     "location": {
       "column": "9",
-      "line": "274",
+      "line": "332",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_SHIFT_4N_3",
@@ -2914,13 +3796,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@16472@macro@PRI_MASK_4N_2",
+    "ID": "c:tm4c123gh6pm_registers.h@18333@macro@PRI_MASK_4N_2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_MASK_4N_2",
     "location": {
       "column": "9",
-      "line": "296",
+      "line": "355",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_MASK_4N_2",
@@ -2928,13 +3810,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@16509@macro@PRI_NUM_MASK_4N_2",
+    "ID": "c:tm4c123gh6pm_registers.h@18370@macro@PRI_NUM_MASK_4N_2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_NUM_MASK_4N_2",
     "location": {
       "column": "9",
-      "line": "297",
+      "line": "356",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_NUM_MASK_4N_2",
@@ -2942,13 +3824,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@16549@macro@PRI_SHIFT_4N_2",
+    "ID": "c:tm4c123gh6pm_registers.h@18410@macro@PRI_SHIFT_4N_2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_SHIFT_4N_2",
     "location": {
       "column": "9",
-      "line": "298",
+      "line": "357",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_SHIFT_4N_2",
@@ -2956,13 +3838,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@17299@macro@PRI_MASK_4N_1",
+    "ID": "c:tm4c123gh6pm_registers.h@19186@macro@PRI_MASK_4N_1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_MASK_4N_1",
     "location": {
       "column": "9",
-      "line": "320",
+      "line": "380",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_MASK_4N_1",
@@ -2970,13 +3852,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@17336@macro@PRI_NUM_MASK_4N_1",
+    "ID": "c:tm4c123gh6pm_registers.h@19223@macro@PRI_NUM_MASK_4N_1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_NUM_MASK_4N_1",
     "location": {
       "column": "9",
-      "line": "321",
+      "line": "381",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_NUM_MASK_4N_1",
@@ -2984,13 +3866,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@17376@macro@PRI_SHIFT_4N_1",
+    "ID": "c:tm4c123gh6pm_registers.h@19263@macro@PRI_SHIFT_4N_1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_SHIFT_4N_1",
     "location": {
       "column": "9",
-      "line": "322",
+      "line": "382",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_SHIFT_4N_1",
@@ -2998,13 +3880,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@18114@macro@PRI_MASK_4N_0",
+    "ID": "c:tm4c123gh6pm_registers.h@20025@macro@PRI_MASK_4N_0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_MASK_4N_0",
     "location": {
       "column": "9",
-      "line": "344",
+      "line": "405",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_MASK_4N_0",
@@ -3012,13 +3894,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@18151@macro@PRI_NUM_MASK_4N_0",
+    "ID": "c:tm4c123gh6pm_registers.h@20062@macro@PRI_NUM_MASK_4N_0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_NUM_MASK_4N_0",
     "location": {
       "column": "9",
-      "line": "345",
+      "line": "406",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_NUM_MASK_4N_0",
@@ -3026,13 +3908,13 @@
     "scope": null
   },
   {
-    "ID": "c:tm4c123gh6pm_registers.h@18191@macro@PRI_SHIFT_4N_0",
+    "ID": "c:tm4c123gh6pm_registers.h@20102@macro@PRI_SHIFT_4N_0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PRI_SHIFT_4N_0",
     "location": {
       "column": "9",
-      "line": "346",
+      "line": "407",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\tm4c123gh6pm_registers.h"
     },
     "name": "PRI_SHIFT_4N_0",
@@ -4818,76 +5700,6 @@
     "scope": null
   },
   {
-    "ID": "c:LED_SW.h@373@macro@LED_SW_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LED_SW_H_",
-    "location": {
-      "column": "9",
-      "line": "9",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
-    },
-    "name": "LED_SW_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Leds_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Leds_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "23",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
-    },
-    "name": "Leds_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Leds_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Leds_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "23",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
-    },
-    "name": "Leds_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SWs_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SWs_init(void)",
-    "location": {
-      "column": "6",
-      "line": "26",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
-    },
-    "name": "SWs_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SWs_init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SWs_init(void)",
-    "location": {
-      "column": "6",
-      "line": "26",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
-    },
-    "name": "SWs_init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:@F@Leds_Init",
     "What": "Function",
     "defdec": "Def",
@@ -4902,13 +5714,27 @@
     "scope": null
   },
   {
+    "ID": "c:LED_SW.c@553@F@Leds_Init@delay",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "delay",
+    "location": {
+      "column": "25",
+      "line": "15",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@SWs_init",
     "What": "Function",
     "defdec": "Def",
     "display": "void SWs_init(void)",
     "location": {
       "column": "6",
-      "line": "22",
+      "line": "35",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
     },
     "name": "SWs_init",
@@ -4916,269 +5742,479 @@
     "scope": null
   },
   {
-    "ID": "c:@ticks_num",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "ticks_num",
-    "location": {
-      "column": "17",
-      "line": "10",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "ticks_num",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@303@macro@NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Delay_MS",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void Delay_MS(unsigned long long)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "Delay_MS",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@390@F@Delay_MS@count",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "count",
-    "location": {
-      "column": "30",
-      "line": "15",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "count",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "21",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortF_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortF_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "28",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "GPIOPortF_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@App_Counter",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void App_Counter(uint32)",
-    "location": {
-      "column": "6",
-      "line": "45",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "App_Counter",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@string_to_int",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint16 string_to_int(uint8)",
-    "location": {
-      "column": "8",
-      "line": "57",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "string_to_int",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int main(void)",
-    "location": {
-      "column": "5",
-      "line": "112",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@2622@F@main@delay",
+    "ID": "c:LED_SW.c@1813@F@SWs_init@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
     "location": {
       "column": "25",
-      "line": "115",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+      "line": "39",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
     },
     "name": "delay",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@3164@F@main@key_Value",
-    "What": "Variable",
+    "ID": "c:@F@Read_STOP_SW",
+    "What": "Function",
     "defdec": "Def",
-    "display": "key_Value",
+    "display": "uint8 Read_STOP_SW(void)",
     "location": {
-      "column": "8",
-      "line": "133",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+      "column": "7",
+      "line": "86",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
     },
-    "name": "key_Value",
+    "name": "Read_STOP_SW",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@3164@F@main@Beef_weight",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Beef_weight",
-    "location": {
-      "column": "19",
-      "line": "133",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "Beef_weight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3164@F@main@Chicken_weight",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Chicken_weight",
-    "location": {
-      "column": "36",
-      "line": "133",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "Chicken_weight",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3164@F@main@Cooking_Time_digit",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Cooking_Time_digit",
-    "location": {
-      "column": "56",
-      "line": "133",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "Cooking_Time_digit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3164@F@main@cook_time_flag",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "cook_time_flag",
-    "location": {
-      "column": "80",
-      "line": "133",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "cook_time_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@3264@F@main@Cooking_Time_total",
-    "What": "Variable",
+    "ID": "c:@F@Read_START_SW",
+    "What": "Function",
     "defdec": "Def",
-    "display": "Cooking_Time_total",
+    "display": "uint8 Read_START_SW(void)",
+    "location": {
+      "column": "7",
+      "line": "92",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
+    },
+    "name": "Read_START_SW",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_ON",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LED_ON(void)",
+    "location": {
+      "column": "6",
+      "line": "98",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
+    },
+    "name": "LED_ON",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_OFF",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LED_OFF(void)",
+    "location": {
+      "column": "6",
+      "line": "104",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.c"
+    },
+    "name": "LED_OFF",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@373@macro@LED_SW_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_SW_H_",
     "location": {
       "column": "9",
-      "line": "134",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+      "line": "9",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
     },
-    "name": "Cooking_Time_total",
-    "origin": "project_file",
+    "name": "LED_SW_H_",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:main.c@3264@F@main@Total_cooking",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Total_cooking",
-    "location": {
-      "column": "38",
-      "line": "134",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
-    },
-    "name": "Total_cooking",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@5740@F@main@i",
-    "What": "Variable",
+    "ID": "c:LED_SW.h@1879@macro@LEDs_number",
+    "What": "MacroDef",
     "defdec": "Def",
-    "display": "i",
+    "display": "LEDs_number",
     "location": {
-      "column": "17",
-      "line": "219",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
     },
-    "name": "i",
-    "origin": "project_file",
+    "name": "LEDs_number",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:main.c@5740@F@main@j",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "j",
+    "ID": "c:LED_SW.h@1905@macro@SWs_number",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SWs_number",
     "location": {
-      "column": "24",
-      "line": "219",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
     },
-    "name": "j",
-    "origin": "project_file",
+    "name": "SWs_number",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@1930@macro@LED_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_PORT",
+    "location": {
+      "column": "9",
+      "line": "43",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@1976@macro@LED_PORT_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_PORT_MASK",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_PORT_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2014@macro@SW_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PORT",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2059@macro@SW_PORT_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PORT_MASK",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PORT_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2096@macro@LED_PIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LED_PIN",
+    "location": {
+      "column": "9",
+      "line": "47",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_PIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2140@macro@SW1_PIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW1_PIN",
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW1_PIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2183@macro@SW2_PIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW2_PIN",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW2_PIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2228@macro@SW_INTERRUPT_PRIORITY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_INTERRUPT_PRIORITY",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_INTERRUPT_PRIORITY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2262@macro@SW_EN_BIT_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_EN_BIT_NUM",
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_EN_BIT_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2319@macro@SW_EN_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_EN_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_EN_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2382@macro@SW_PRI_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PRI_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PRI_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2472@macro@SW_PRI_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PRI_MASK",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PRI_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2534@macro@SW_PRI_SHIFT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PRI_SHIFT",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PRI_SHIFT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:LED_SW.h@2597@macro@SW_PRI_NUM_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SW_PRI_NUM_MASK",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SW_PRI_NUM_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Leds_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Leds_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "62",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Leds_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Leds_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Leds_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "62",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Leds_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SWs_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SWs_init(void)",
+    "location": {
+      "column": "6",
+      "line": "65",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SWs_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SWs_init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SWs_init(void)",
+    "location": {
+      "column": "6",
+      "line": "65",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "SWs_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Read_STOP_SW",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 Read_STOP_SW(void)",
+    "location": {
+      "column": "7",
+      "line": "68",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Read_STOP_SW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Read_STOP_SW",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 Read_STOP_SW(void)",
+    "location": {
+      "column": "7",
+      "line": "68",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Read_STOP_SW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Read_START_SW",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 Read_START_SW(void)",
+    "location": {
+      "column": "7",
+      "line": "71",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Read_START_SW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Read_START_SW",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 Read_START_SW(void)",
+    "location": {
+      "column": "7",
+      "line": "71",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "Read_START_SW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_ON",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_ON(void)",
+    "location": {
+      "column": "6",
+      "line": "74",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_ON",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_ON(void)",
+    "location": {
+      "column": "6",
+      "line": "74",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_OFF",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_OFF(void)",
+    "location": {
+      "column": "6",
+      "line": "77",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LED_OFF",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LED_OFF(void)",
+    "location": {
+      "column": "6",
+      "line": "77",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\LED_SW.h"
+    },
+    "name": "LED_OFF",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -5375,6 +6411,300 @@
     },
     "name": "SysTick_Enable",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@ticks_num",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "ticks_num",
+    "location": {
+      "column": "17",
+      "line": "10",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "ticks_num",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@first_stop_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "first_stop_flag",
+    "location": {
+      "column": "7",
+      "line": "13",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "first_stop_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@second_stop_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "second_stop_flag",
+    "location": {
+      "column": "28",
+      "line": "13",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "second_stop_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@425@macro@NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "NUMBER_OF_ITERATIONS_PER_ONE_MILI_SECOND",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Delay_MS",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Delay_MS(unsigned long long)",
+    "location": {
+      "column": "6",
+      "line": "16",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Delay_MS",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@512@F@Delay_MS@count",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "count",
+    "location": {
+      "column": "30",
+      "line": "18",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "count",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "24",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortF_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortF_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "31",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "GPIOPortF_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@App_Counter",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void App_Counter(uint32)",
+    "location": {
+      "column": "6",
+      "line": "75",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "App_Counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@string_to_int",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16 string_to_int(uint8)",
+    "location": {
+      "column": "8",
+      "line": "111",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "string_to_int",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "149",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3115@F@main@delay",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "delay",
+    "location": {
+      "column": "25",
+      "line": "152",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3657@F@main@key_Value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "key_Value",
+    "location": {
+      "column": "8",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "key_Value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3657@F@main@Beef_weight",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Beef_weight",
+    "location": {
+      "column": "19",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Beef_weight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3657@F@main@Chicken_weight",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Chicken_weight",
+    "location": {
+      "column": "36",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Chicken_weight",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3657@F@main@Cooking_Time_digit",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Cooking_Time_digit",
+    "location": {
+      "column": "56",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Cooking_Time_digit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3657@F@main@cook_time_flag",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "cook_time_flag",
+    "location": {
+      "column": "80",
+      "line": "170",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "cook_time_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3757@F@main@Cooking_Time_total",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Cooking_Time_total",
+    "location": {
+      "column": "9",
+      "line": "171",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Cooking_Time_total",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@3757@F@main@Total_cooking",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Total_cooking",
+    "location": {
+      "column": "38",
+      "line": "171",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "Total_cooking",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@6233@F@main@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "17",
+      "line": "256",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@6233@F@main@j",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "j",
+    "location": {
+      "column": "24",
+      "line": "256",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\main.c"
+    },
+    "name": "j",
+    "origin": "project_file",
     "scope": null
   },
   {

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.2.313/W64 for ARM                  14/May/2022  22:03:24
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  17/May/2022  08:15:40
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -68,60 +68,71 @@ initialize by copy { rw };
   .intvec            const            0x0    0xbc  cstartup_M.o [1]
                                    - 0xbc    0xbc
 
-"P1":                                       0xb86
-  .text              ro code         0xbc   0x3c8  main.o [1]
-  .text              ro code        0x484   0x312  LCD.o [1]
-  .text              ro code        0x796    0x2a  copy_init3.o [4]
-  .text              ro code        0x7c0    0x6c  systick.o [1]
-  .text              ro code        0x82c   0x12c  LED_SW.o [1]
-  .text              ro code        0x958   0x142  keypad.o [1]
-  .text              ro code        0xa9a    0x14  memset.o [4]
-  .text              ro code        0xaae     0x2  cstartup_M.o [1]
-  .text              ro code        0xab0    0x66  ABImemset.o [4]
-  .text              ro code        0xb16     0x2  cstartup_M.o [1]
-  .text              ro code        0xb18    0x28  data_init.o [4]
-  .text              ro code        0xb40    0x22  fpinit_M.o [3]
-  .iar.init_table    const          0xb64    0x14  - Linker created -
-  .text              ro code        0xb78     0x2  cstartup_M.o [1]
-  Initializer bytes  const          0xb7c    0x20  <for P2-1>
-  .text              ro code        0xb9c    0x1e  cmain.o [4]
-  .text              ro code        0xbba     0x4  low_level_init.o [2]
-  .text              ro code        0xbbe     0x4  exit.o [2]
-  .text              ro code        0xbc2     0x2  cstartup_M.o [1]
-  .text              ro code        0xbc4     0xa  cexit.o [4]
-  .text              ro code        0xbce     0x2  cstartup_M.o [1]
-  .text              ro code        0xbd0    0x14  exit.o [5]
-  .rodata            const          0xbe4    0x10  main.o [1]
-  .rodata            const          0xbf4    0x10  main.o [1]
-  .rodata            const          0xc04    0x10  main.o [1]
-  .text              ro code        0xc14    0x10  cstartup_M.o [1]
-  .rodata            const          0xc24     0x8  main.o [1]
-  .rodata            const          0xc2c     0x8  main.o [1]
-  .rodata            const          0xc34     0x8  main.o [1]
-  .text              ro code        0xc3c     0x2  cstartup_M.o [1]
-  .text              ro code        0xc3e     0x2  cstartup_M.o [1]
-  .text              ro code        0xc40     0x2  cstartup_M.o [1]
-  .rodata            const          0xc42     0x0  copy_init3.o [4]
-                                  - 0xc42   0xb86
+"P1":                                       0xd22
+  .text              ro code         0xbc   0x4a4  main.o [1]
+  .text              ro code        0x560   0x312  LCD.o [1]
+  .text              ro code        0x872    0x2a  copy_init3.o [4]
+  .text              ro code        0x89c   0x1c4  LED_SW.o [1]
+  .text              ro code        0xa60    0x6c  systick.o [1]
+  .text              ro code        0xacc   0x142  keypad.o [1]
+  .text              ro code        0xc0e    0x14  memset.o [4]
+  .text              ro code        0xc22     0x2  cstartup_M.o [1]
+  .text              ro code        0xc24    0x66  ABImemset.o [4]
+  .text              ro code        0xc8a     0x2  cstartup_M.o [1]
+  .text              ro code        0xc8c    0x28  data_init.o [4]
+  .text              ro code        0xcb4    0x22  fpinit_M.o [3]
+  .text              ro code        0xcd6     0x2  cstartup_M.o [1]
+  Initializer bytes  const          0xcd8    0x24  <for P2-1>
+  .iar.init_table    const          0xcfc    0x14  - Linker created -
+  .text              ro code        0xd10     0x2  cstartup_M.o [1]
+  .text              ro code        0xd14    0x1e  cmain.o [4]
+  .text              ro code        0xd32     0x4  low_level_init.o [2]
+  .text              ro code        0xd36     0x4  exit.o [2]
+  .text              ro code        0xd3a     0x2  cstartup_M.o [1]
+  .text              ro code        0xd3c     0xa  cexit.o [4]
+  .text              ro code        0xd46     0x2  cstartup_M.o [1]
+  .text              ro code        0xd48    0x14  exit.o [5]
+  .rodata            const          0xd5c    0x10  main.o [1]
+  .rodata            const          0xd6c    0x10  main.o [1]
+  .rodata            const          0xd7c    0x10  main.o [1]
+  .text              ro code        0xd8c    0x10  cstartup_M.o [1]
+  .rodata            const          0xd9c     0xc  main.o [1]
+  .rodata            const          0xda8     0x8  main.o [1]
+  .rodata            const          0xdb0     0x8  main.o [1]
+  .rodata            const          0xdb8     0x8  main.o [1]
+  .rodata            const          0xdc0     0x8  main.o [1]
+  .rodata            const          0xdc8     0x8  main.o [1]
+  .text              ro code        0xdd0     0x2  cstartup_M.o [1]
+  .text              ro code        0xdd2     0x2  cstartup_M.o [1]
+  .text              ro code        0xdd4     0x2  cstartup_M.o [1]
+  .text              ro code        0xdd6     0x2  cstartup_M.o [1]
+  .text              ro code        0xdd8     0x2  cstartup_M.o [1]
+  .text              ro code        0xdda     0x2  cstartup_M.o [1]
+  .text              ro code        0xddc     0x2  cstartup_M.o [1]
+  .rodata            const          0xdde     0x0  copy_init3.o [4]
+                                  - 0xdde   0xd22
 
-"P2", part 1 of 2:                           0x20
-  P2-1                        0x2000'0000    0x20  <Init block>
+"P2", part 1 of 2:                           0x24
+  P2-1                        0x2000'0000    0x22  <Init block>
     .data            inited   0x2000'0000    0x10  keypad.o [1]
     .data            inited   0x2000'0010     0xc  LCD.o [1]
     .bss             inited   0x2000'001c     0x4  main.o [1]
-                            - 0x2000'0020    0x20
+    .data            inited   0x2000'0020     0x1  main.o [1]
+    .data            inited   0x2000'0021     0x1  main.o [1]
+                            - 0x2000'0022    0x22
 
 "P2", part 2 of 2:                         0x1000
-  CSTACK                      0x2000'0020  0x1000  <Block>
-    CSTACK           uninit   0x2000'0020  0x1000  <Block tail>
-                            - 0x2000'1020  0x1000
+  CSTACK                      0x2000'0028  0x1000  <Block>
+    CSTACK           uninit   0x2000'0028  0x1000  <Block tail>
+                            - 0x2000'1028  0x1000
 
 Unused ranges:
 
          From           To      Size
          ----           --      ----
-        0xc42     0x3'ffff  0x3'f3be
-  0x2000'1020  0x2000'7fff    0x6fe0
+        0xdde     0x3'ffff  0x3'f222
+  0x2000'0024  0x2000'0027       0x4
+  0x2000'1028  0x2000'7fff    0x6fd8
 
 
 *******************************************************************************
@@ -131,10 +142,10 @@ Unused ranges:
           Address      Size
           -------      ----
 Copy (__iar_copy_init3)
-    1 source range, total size 0x20:
-                0xb7c  0x20
-    1 destination range, total size 0x20:
-          0x2000'0000  0x20
+    1 source range, total size 0x24 (105% of destination):
+                0xcd8  0x24
+    1 destination range, total size 0x22:
+          0x2000'0000  0x22
 
 
 
@@ -150,13 +161,13 @@ command line/config:
 
 D:\Courses\repos\Microwave Oven Controller Project\Embedded Project repo\App_code\Debug\Obj: [1]
     LCD.o                 786       12       12
-    LED_SW.o              300
-    cstartup_M.o           32      188
+    LED_SW.o              452
+    cstartup_M.o           42      188
     keypad.o              322       16       16
-    main.o                968       76        4
+    main.o              1'188      106        6
     systick.o             108
     -------------------------------------------
-    Total:              2'516      292       32
+    Total:              2'898      322       34
 
 dl7M_tln.a: [2]
     exit.o                  4
@@ -184,10 +195,10 @@ shb_l.a: [5]
     -------------------------------------------
     Total:                 20
 
-    Gaps                             2
+    Gaps                    2
     Linker created                  22    4'096
 -----------------------------------------------
-    Grand Total:        2'822      316    4'128
+    Grand Total:        3'206      344    4'130
 
 
 *******************************************************************************
@@ -196,61 +207,72 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base         0xb64          --   Gb  - Linker created -
-.iar.init_table$$Limit        0xb78          --   Gb  - Linker created -
-?main                         0xb9d         Code  Gb  cmain.o [4]
-App_Counter                   0x15d   0x18  Code  Gb  main.o [1]
-BusFault_Handler              0xbc3    0x2  Code  Gb  cstartup_M.o [1]
-CSTACK$$Base            0x2000'0020          --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'1020          --   Gb  - Linker created -
-DebugMon_Handler              0xc3f    0x2  Code  Gb  cstartup_M.o [1]
+.iar.init_table$$Base         0xcfc          --   Gb  - Linker created -
+.iar.init_table$$Limit        0xd10          --   Gb  - Linker created -
+?main                         0xd15         Code  Gb  cmain.o [4]
+App_Counter                   0x1ab   0x96  Code  Gb  main.o [1]
+BusFault_Handler              0xd11    0x2  Code  Gb  cstartup_M.o [1]
+CSTACK$$Base            0x2000'0028          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1028          --   Gb  - Linker created -
+DebugMon_Handler              0xdd1    0x2  Code  Gb  cstartup_M.o [1]
 Delay_MS                       0xbd   0x38  Code  Gb  main.o [1]
-GPIOPortF_Handler             0x111   0x4c  Code  Gb  main.o [1]
-HardFault_Handler             0xb17    0x2  Code  Gb  cstartup_M.o [1]
-KeyPad_getPressedKey          0x9f7   0x4c  Code  Gb  keypad.o [1]
-LCD_clearScreen               0x6dd    0xa  Code  Gb  LCD.o [1]
-LCD_displayCharacter          0x5d1   0xa2  Code  Gb  LCD.o [1]
-LCD_displayCounter            0x6e7   0x5e  Code  Gb  LCD.o [1]
-LCD_displayString             0x673   0x20  Code  Gb  LCD.o [1]
+GPIOPortA_Handler             0xdd5    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortB_Handler             0xdd7    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortC_Handler             0xdd9    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortD_Handler             0xddb    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortE_Handler             0xddd    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortF_Handler             0x111   0x9a  Code  Gb  main.o [1]
+HardFault_Handler             0xc8b    0x2  Code  Gb  cstartup_M.o [1]
+KeyPad_getPressedKey          0xb6b   0x4c  Code  Gb  keypad.o [1]
+LCD_clearScreen               0x7b9    0xa  Code  Gb  LCD.o [1]
+LCD_displayCharacter          0x6ad   0xa2  Code  Gb  LCD.o [1]
+LCD_displayCounter            0x7c3   0x5e  Code  Gb  LCD.o [1]
+LCD_displayString             0x74f   0x20  Code  Gb  LCD.o [1]
 LCD_displayStringRowColumn
-                              0x6c9   0x14  Code  Gb  LCD.o [1]
-LCD_goToRowColumn             0x693   0x36  Code  Gb  LCD.o [1]
-LCD_init                      0x485   0xaa  Code  Gb  LCD.o [1]
-LCD_sendCommand               0x52f   0xa2  Code  Gb  LCD.o [1]
-Leds_Init                     0x82d   0x4a  Code  Gb  LED_SW.o [1]
-MemManage_Handler             0xb79    0x2  Code  Gb  cstartup_M.o [1]
-NMI_Handler                   0xaaf    0x2  Code  Gb  cstartup_M.o [1]
-PendSV_Handler                0xc41    0x2  Code  Gb  cstartup_M.o [1]
-Region$$Table$$Base           0xb64          --   Gb  - Linker created -
-Region$$Table$$Limit          0xb78          --   Gb  - Linker created -
-SVC_Handler                   0xc3d    0x2  Code  Gb  cstartup_M.o [1]
-SWs_init                      0x877   0x9c  Code  Gb  LED_SW.o [1]
-SysTick_Disable               0x7f5    0xe  Code  Gb  systick.o [1]
-SysTick_Enable                0x803   0x14  Code  Gb  systick.o [1]
+                              0x7a5   0x14  Code  Gb  LCD.o [1]
+LCD_goToRowColumn             0x76f   0x36  Code  Gb  LCD.o [1]
+LCD_init                      0x561   0xaa  Code  Gb  LCD.o [1]
+LCD_sendCommand               0x60b   0xa2  Code  Gb  LCD.o [1]
+LED_OFF                       0x9f1    0xe  Code  Gb  LED_SW.o [1]
+LED_ON                        0x9e3    0xe  Code  Gb  LED_SW.o [1]
+Leds_Init                     0x89d   0x64  Code  Gb  LED_SW.o [1]
+MemManage_Handler             0xcd7    0x2  Code  Gb  cstartup_M.o [1]
+NMI_Handler                   0xc23    0x2  Code  Gb  cstartup_M.o [1]
+PendSV_Handler                0xdd3    0x2  Code  Gb  cstartup_M.o [1]
+Read_START_SW                 0x9d9    0xa  Code  Gb  LED_SW.o [1]
+Read_STOP_SW                  0x9cf    0xa  Code  Gb  LED_SW.o [1]
+Region$$Table$$Base           0xcfc          --   Gb  - Linker created -
+Region$$Table$$Limit          0xd10          --   Gb  - Linker created -
+SVC_Handler                   0xd47    0x2  Code  Gb  cstartup_M.o [1]
+SWs_init                      0x901   0xce  Code  Gb  LED_SW.o [1]
+SysTick_Disable               0xa95    0xe  Code  Gb  systick.o [1]
+SysTick_Enable                0xaa3   0x14  Code  Gb  systick.o [1]
 SysTick_Handler                0xf5   0x1c  Code  Gb  main.o [1]
-SysTick_Init                  0x7c1   0x34  Code  Gb  systick.o [1]
-UsageFault_Handler            0xbcf    0x2  Code  Gb  cstartup_M.o [1]
-__aeabi_memset                0xab1         Code  Gb  ABImemset.o [4]
-__cmain                       0xb9d         Code  Gb  cmain.o [4]
-__exit                        0xbd1   0x14  Code  Gb  exit.o [5]
-__iar_Memset                  0xab1         Code  Gb  ABImemset.o [4]
-__iar_Memset_word             0xab9         Code  Gb  ABImemset.o [4]
-__iar_copy_init3              0x797   0x2a  Code  Gb  copy_init3.o [4]
-__iar_data_init3              0xb19   0x28  Code  Gb  data_init.o [4]
-__iar_init_vfp                0xb41         Code  Gb  fpinit_M.o [3]
-__iar_program_start           0xc15   0x10  Code  Gb  cstartup_M.o [1]
-__low_level_init              0xbbb    0x4  Code  Gb  low_level_init.o [2]
+SysTick_Init                  0xa61   0x34  Code  Gb  systick.o [1]
+UsageFault_Handler            0xd3b    0x2  Code  Gb  cstartup_M.o [1]
+__aeabi_memset                0xc25         Code  Gb  ABImemset.o [4]
+__cmain                       0xd15         Code  Gb  cmain.o [4]
+__exit                        0xd49   0x14  Code  Gb  exit.o [5]
+__iar_Memset                  0xc25         Code  Gb  ABImemset.o [4]
+__iar_Memset_word             0xc2d         Code  Gb  ABImemset.o [4]
+__iar_copy_init3              0x873   0x2a  Code  Gb  copy_init3.o [4]
+__iar_data_init3              0xc8d   0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp                0xcb5         Code  Gb  fpinit_M.o [3]
+__iar_program_start           0xd8d   0x10  Code  Gb  cstartup_M.o [1]
+__low_level_init              0xd33    0x4  Code  Gb  low_level_init.o [2]
 __vector_table                  0x0   0xbc  Data  Gb  cstartup_M.o [1]
-_call_main                    0xba9         Code  Gb  cmain.o [4]
-_exit                         0xbc5         Code  Gb  cexit.o [4]
-delayMs                       0xa81   0x1a  Code  Gb  keypad.o [1]
-delay_Ms                      0x77d   0x1a  Code  Gb  LCD.o [1]
-exit                          0xbbf    0x4  Code  Gb  exit.o [2]
-keypad_Init                   0x959   0x9e  Code  Gb  keypad.o [1]
-main                          0x1c9  0x28e  Code  Gb  main.o [1]
-memset                        0xa9b   0x14  Code  Gb  memset.o [4]
+_call_main                    0xd21         Code  Gb  cmain.o [4]
+_exit                         0xd3d         Code  Gb  cexit.o [4]
+delayMs                       0xbf5   0x1a  Code  Gb  keypad.o [1]
+delay_Ms                      0x859   0x1a  Code  Gb  LCD.o [1]
+exit                          0xd37    0x4  Code  Gb  exit.o [2]
+first_stop_flag         0x2000'0020    0x1  Data  Gb  main.o [1]
+keypad_Init                   0xacd   0x9e  Code  Gb  keypad.o [1]
+main                          0x295  0x28e  Code  Gb  main.o [1]
+memset                        0xc0f   0x14  Code  Gb  memset.o [4]
 num_symbol              0x2000'0010    0xc  Data  Gb  LCD.o [1]
-string_to_int                 0x175   0x54  Code  Gb  main.o [1]
+second_stop_flag        0x2000'0021    0x1  Data  Gb  main.o [1]
+string_to_int                 0x241   0x54  Code  Gb  main.o [1]
 symbol                  0x2000'0000   0x10  Data  Gb  keypad.o [1]
 ticks_num               0x2000'001c    0x4  Data  Gb  main.o [1]
 
@@ -261,9 +283,9 @@ ticks_num               0x2000'001c    0x4  Data  Gb  main.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  2'822 bytes of readonly  code memory
-    316 bytes of readonly  data memory
-  4'128 bytes of readwrite data memory
+  3'206 bytes of readonly  code memory
+    344 bytes of readonly  data memory
+  4'130 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

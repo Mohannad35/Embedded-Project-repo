@@ -1,3 +1,9 @@
+/******************************************************************************
+ * Module:		TM4C123GH6PM_Registers
+ * File Name:	tm4c123gh6pm_registers.h
+ * Description:	Header file includes some of TM4C123GH6PM (Tiva c) registers
+ * Author:		Mohannad Ragab Afifi
+ *******************************************************************************/
 #ifndef TM4C123GH6PM_REGISTERS
 #define TM4C123GH6PM_REGISTERS
 

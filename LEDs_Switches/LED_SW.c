@@ -47,24 +47,24 @@ void SWs_init(void)
 	GPIO_PORTF_CR_REG |= (1 << 0);	  /* Enable changes on PF0 */
 #endif
 	/* Disable Analog on SW1, SW2 */
-	(*((volatile uint32 *)(SW_PORT + PORT_ANALOG_MODE_SEL_REG_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_ANALOG_MODE_SEL_REG_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* Clear PMCx bits for SW1, SW2 to use it as GPIO pin */
-	(*((volatile uint32 *)(SW_PORT + PORT_CTL_REG_OFFSET))) &= ~((0xF<<(SW1_PIN*4)) | (0xF<<(SW2_PIN*4)));//0xFFF0FFF0
+	(*((volatile uint32 *)(SW_PORT + PORT_CTL_REG_OFFSET))) &= ~((0xF<<(SW1_PIN*4)) || (0xF<<(SW2_PIN*4)));//0xFFF0FFF0
 	/* Configure SW1, SW2 as input pin */
-	(*((volatile uint32 *)(SW_PORT + PORT_DIR_REG_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_DIR_REG_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* Disable alternative function on SW1, SW2 */
-	(*((volatile uint32 *)(SW_PORT + PORT_ALT_FUNC_REG_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_ALT_FUNC_REG_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* Enable pull-down on SW1, SW2 */
-	(*((volatile uint32 *)(SW_PORT + PORT_PULL_UP_REG_OFFSET))) |= ((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_PULL_DOWN_REG_OFFSET))) |= ((1<<SW1_PIN) | (1<<SW2_PIN));
 	/* Enable Digital I/O on SW1, SW2 */
 	(*((volatile uint32 *)(SW_PORT + PORT_DIGITAL_ENABLE_REG_OFFSET))) |= ((1<<SW1_PIN) | (1<<SW2_PIN));
 
 	/* SW1, SW2 detect edges */
-    (*((volatile uint32 *)(SW_PORT + PORT_IS_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+    (*((volatile uint32 *)(SW_PORT + PORT_IS_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* SW1, SW2 will detect a certain edge */
-	(*((volatile uint32 *)(SW_PORT + PORT_IBE_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_IBE_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* SW1, SW2 will detect a falling edge */
-	(*((volatile uint32 *)(SW_PORT + PORT_IEV_OFFSET))) &= ~((1<<SW1_PIN) | (1<<SW2_PIN));
+	(*((volatile uint32 *)(SW_PORT + PORT_IEV_OFFSET))) &= ~((1<<SW1_PIN) & (1<<SW2_PIN));
 	/* Clear Trigger flag for SW1, SW2 (Interupt Flag) */
 	(*((volatile uint32 *)(SW_PORT + PORT_ICR_OFFSET))) |= ((1<<SW1_PIN) | (1<<SW2_PIN));
 	/* Enable Interrupt on SW1, SW2 pin */
