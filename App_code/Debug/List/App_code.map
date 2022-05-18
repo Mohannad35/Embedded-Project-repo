@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.2.313/W64 for ARM                  17/May/2022  08:15:40
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  17/May/2022  21:40:05
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -11,7 +11,7 @@
 #        repo\App_code\Debug\List\App_code.map
 #    Command line =
 #        -f "D:\Courses\repos\Microwave Oven Controller Project\Embedded
-#        Project repo\App_code\Debug\Exe\App_code.out.rsp"
+#        Project repo\App_code\Debug\List\App_code.map.rsp"
 #        ("D:\Courses\repos\Microwave Oven Controller Project\Embedded Project
 #        repo\App_code\Debug\Obj\cstartup_M.o" "D:\Courses\repos\Microwave Oven
 #        Controller Project\Embedded Project repo\App_code\Debug\Obj\keypad.o"
