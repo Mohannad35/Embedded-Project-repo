@@ -6,6 +6,8 @@
  * Author:		Mohannad Ragab Afifi
  *******************************************************************************/
 #include "systick.h"
+#include "tm4c123gh6pm_registers.h"
+#include "std_types.h"
 
 // the systick handler should be moved from this file to the file where it will be used (main.c or app.c for example)
 /*******************************************************************************************************************/
@@ -20,7 +22,17 @@
 // }
 /*******************************************************************************************************************/
 
-/* Enable the SystTick Timer to run using the System Clock with Frequency 16Mhz and generate interrupt every 1 second */
+/*******************************************************************************
+ *                          Functions Definitions                              *
+ *******************************************************************************/
+/************************************************************************************
+* Function Name: SysTick_Init
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Enable the SystTick Timer to run using the System Clock with Frequency
+               16Mhz and generate interrupt every 1 second.
+************************************************************************************/
 void SysTick_Init(void)
 {
 	/* Enable Interrupts and Exceptions */
@@ -39,23 +51,27 @@ void SysTick_Init(void)
     NVIC_SYSTEM_PRI3_REG =  (NVIC_SYSTEM_PRI3_REG & SYSTICK_PRIORITY_MASK) | (SYSTICK_INTERRUPT_PRIORITY << SYSTICK_PRIORITY_BITS_POS);
 }
 
+/************************************************************************************
+* Function Name: SysTick_Disable
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Function to disable systick timer.
+************************************************************************************/
 void SysTick_Disable(void)
 {
 	SYSTICK_CTRL_REG &= ~0x00000001;	/* Disable the SysTick Timer by Clear the ENABLE Bit */
 }
 
+/************************************************************************************
+* Function Name: SysTick_Enable
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Function to enable systick timer to start over.
+************************************************************************************/
 void SysTick_Enable(void)
 {
 	SYSTICK_CTRL_REG |= 0x00000001;		/* Enable the SysTick Timer by Clear the ENABLE Bit */
 	SYSTICK_RELOAD_REG = 15999999;		/* Set the Reload value with 15999999 to count 1 Second */
-}
-
-void SysTick_Pause(void)
-{
-	SYSTICK_CTRL_REG &= ~0x00000001;	/* Disable the SysTick Timer by Clear the ENABLE Bit */
-}
-
-void SysTick_Resume(void)
-{
-	SYSTICK_CTRL_REG |= 0x00000001;		/* Enable the SysTick Timer by Clear the ENABLE Bit */
 }

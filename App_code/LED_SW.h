@@ -8,15 +8,11 @@
 #ifndef LED_SW_H_
 #define LED_SW_H_
 
-#include "tm4c123gh6pm_registers.h"
 #include "std_types.h"
-#include "common_macros.h"
 
-/*******************************************************************************
- *                                   Macros                                    *
- *******************************************************************************/
+/**************************************** Configuration Instructions ***************************************************/
 /* if u change switches positions from PORTA (pin 3, 2) u have to change the name
- * of the handler function GPIOPortA_Handler to the new PORT handler 
+ * of the handler function GPIOPortA_Handler to the new PORT handler
  */
 
 /* GPIO interrupts in vector table and theier registers */
@@ -37,7 +33,10 @@
 
 // GPIO Port F (Vector teble number 46) (BIT 30 in interrupt regs) (PRI7)
 // interrupt priority set reg(4n+2) where n = 7 so we need to set Bits 23:21
-
+/***********************************************************************************************************************/
+/*******************************************************************************
+ *                                   Macros                                    *
+ *******************************************************************************/
 #define LEDs_number				1
 #define SWs_number				2
 #define LED_PORT 				GPIO_PORTA_BASE_ADDRESS
@@ -58,10 +57,10 @@
 /*******************************************************************************
  *                            Functions Prototypes                             *
  *******************************************************************************/
-/* Enable LED pin */
+/* Initialize LED pin */
 void Leds_Init(void);
 
-/* Enable SW1, SW2 */
+/* Initialize SW1, SW2 */
 void SWs_init(void);
 
 /* Return SW1 value */

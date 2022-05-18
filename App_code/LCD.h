@@ -7,12 +7,11 @@
  *******************************************************************************/
 #ifndef LCD_H_
 #define LCD_H_
-#include "tm4c123gh6pm_registers.h"
+
 #include "std_types.h"
-#include "common_macros.h"
 
 /*******************************************************************************
- *                      Preprocessor Macros                                    *
+ *                                 Macros                                      *
  *******************************************************************************/
 // PA 567 control
 // PD 0123 Data
@@ -52,6 +51,7 @@
 #define SHIFT_CURSOR_TO_RIGHT 0x06
 #define SHIFT_DISPLAY_RIGHT 0x05
 #define SHIFT_DISPLAY_LEFT 0x07
+
 /*******************************************************************************
  *                      Functions Prototypes                                   *
  *******************************************************************************/
@@ -63,6 +63,5 @@ void LCD_init(void);
 void LCD_clearScreen(void);
 void LCD_displayStringRowColumn(uint8 row,uint8 col,const char *Str);
 void LCD_goToRowColumn(uint8 row,uint8 col);
-void delay_Ms(uint32 n);
 
 #endif /* LCD_H_ */

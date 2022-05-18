@@ -8,9 +8,7 @@
 #ifndef KEYPAD_H_
 #define KEYPAD_H_
 
-#include "tm4c123gh6pm_registers.h"
 #include "std_types.h"
-#include "common_macros.h"
 
 /*******************************************************************************
  *                                   Macros                                    *
@@ -42,8 +40,5 @@ void keypad_Init(void);
 
 /* Function responsible for getting the pressed keypad key */
 uint8 KeyPad_getPressedKey(void);
-
-void delayMs(uint32 n);
-void delayUs(uint32 n);
 
 #endif /* KEYPAD_H_ */

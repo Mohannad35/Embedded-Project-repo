@@ -8,9 +8,6 @@
 #ifndef SYSTICK_H_
 #define SYSTICK_H_
 
-#include "tm4c123gh6pm_registers.h"
-#include "std_types.h"
-
 /*******************************************************************************
 // the systick handler should be moved from this file to the file where it will be used (main.c or app.c for example)
 // also u should call Enable_Interrupts(); if u use systick handler

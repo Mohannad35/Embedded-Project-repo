@@ -6,13 +6,38 @@
  * Author: 		Mohannad Ragab Afifi
  *******************************************************************************/
 #include "LCD.h"
+#include "tm4c123gh6pm_registers.h"
+#include "std_types.h"
+#include "common_macros.h"
 
+/*******************************************************************************
+ *                          File GLobal Variables                              *
+ *******************************************************************************/
 /* Array of 4x4 to define characters which will be printe on specific key pressed */
 unsigned char num_symbol[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
 /*******************************************************************************
- *                      Functions Definitions                                  *
+ *                       Local Functions Definitions                           *
  *******************************************************************************/
+void delay_Ms(uint32 n)
+{
+	uint32 i, j;
+	for (i = 0; i < n; i++)
+		for (j = 0; j < 3180; j++)
+		{
+		} /* do nothing for 1 ms */
+}
+
+/*******************************************************************************
+ *                          Functions Definitions                              *
+ *******************************************************************************/
+/************************************************************************************
+* Function Name: LCD_init
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Initialize LCD Module.
+************************************************************************************/
 void LCD_init(void)
 {
 	// 0000 1001 -> 00FE DCBA
@@ -90,6 +115,13 @@ void LCD_init(void)
 	LCD_sendCommand(CLEAR_COMMAND); /* Clear LCD at the beginning */
 }
 
+/************************************************************************************
+* Function Name: LCD_sendCommand
+* Parameters (in): command
+* Parameters (out): None
+* Return value: None
+* Description: Function to send command for the LCD to excute.
+************************************************************************************/
 void LCD_sendCommand(uint8 command)
 {
 
@@ -135,6 +167,13 @@ void LCD_sendCommand(uint8 command)
 #endif
 }
 
+/************************************************************************************
+* Function Name: LCD_displayCharacter
+* Parameters (in): data
+* Parameters (out): None
+* Return value: None
+* Description: Function to send data for the LCD to display.
+************************************************************************************/
 void LCD_displayCharacter(uint8 data)
 {
 	SET_BIT((*((volatile uint32 *)(LCD_CTRL_PORT + PORT_DATA_REG_OFFSET))), RS);   /* Data Mode RS=1 */
@@ -176,6 +215,13 @@ void LCD_displayCharacter(uint8 data)
 #endif
 }
 
+/************************************************************************************
+* Function Name: LCD_displayString
+* Parameters (in): *Str
+* Parameters (out): None
+* Return value: None
+* Description: Function to send a string for the LCD to display.
+************************************************************************************/
 void LCD_displayString(const char *Str)
 {
 	/* The idea is to display the characters of the string one by one */
@@ -187,6 +233,13 @@ void LCD_displayString(const char *Str)
 	}
 }
 
+/************************************************************************************
+* Function Name: LCD_goToRowColumn
+* Parameters (in): row, col
+* Parameters (out): None
+* Return value: None
+* Description: Function to set the LCD cursor at a specific position (row, col).
+************************************************************************************/
 void LCD_goToRowColumn(uint8 row, uint8 col)
 {
 	uint8 Address;
@@ -212,17 +265,38 @@ void LCD_goToRowColumn(uint8 row, uint8 col)
 	LCD_sendCommand(Address | SET_CURSOR_LOCATION);
 }
 
+/************************************************************************************
+* Function Name: LCD_displayStringRowColumn
+* Parameters (in): row, col, *Str
+* Parameters (out): None
+* Return value: None
+* Description: Function to display a string at a specific position (row, col).
+************************************************************************************/
 void LCD_displayStringRowColumn(uint8 row, uint8 col, const char *Str)
 {
 	LCD_goToRowColumn(row, col); /* Go to to the required LCD position */
 	LCD_displayString(Str);		 /* Display the string */
 }
 
+/************************************************************************************
+* Function Name: LCD_clearScreen
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Function to clear the LCD screen and set the cursor at (0, 0) position.
+************************************************************************************/
 void LCD_clearScreen(void)
 {
 	LCD_sendCommand(CLEAR_COMMAND); /* Clear display */
 }
 
+/************************************************************************************
+* Function Name: LCD_displayCounter
+* Parameters (in): n_second
+* Parameters (out): None
+* Return value: None
+* Description: Function to send a number of seconds for the LCD to display in form of (00:00).
+************************************************************************************/
 void LCD_displayCounter(uint32 n_second)
 {
 	// 		  0				    0 		  :		    0			     0
@@ -240,13 +314,4 @@ void LCD_displayCounter(uint32 n_second)
 	LCD_displayCharacter(':');
 	LCD_displayCharacter(num_symbol[secs_second_digit]);
 	LCD_displayCharacter(num_symbol[secs_first_digit]);
-}
-
-void delay_Ms(uint32 n)
-{
-	uint32 i, j;
-	for (i = 0; i < n; i++)
-		for (j = 0; j < 3180; j++)
-		{
-		} /* do nothing for 1 ms */
 }

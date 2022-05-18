@@ -6,8 +6,20 @@
  * Author:		Mohannad Ragab Afifi
  *******************************************************************************/
 #include "LED_SW.h"
+#include "tm4c123gh6pm_registers.h"
+#include "std_types.h"
+#include "common_macros.h"
 
-/* Enable PF1, PF2 and PF3 (RED, Blue and Green LEDs) */
+/*******************************************************************************
+ *                          Functions Definitions                              *
+ *******************************************************************************/
+/************************************************************************************
+* Function Name: Leds_Init
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Initialize Led pin.
+************************************************************************************/
 void Leds_Init(void)
 {
 	// 0010 0000 -> 00FE DCBA
@@ -31,7 +43,13 @@ void Leds_Init(void)
 	(*((volatile uint32 *)(LED_PORT + PORT_DATA_REG_OFFSET))) &= ~(1<<LED_PIN);//0xF7
 }
 
-/* Enable SW1, SW2 and activate external interrupt with falling edge */
+/************************************************************************************
+* Function Name: SWs_init
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Initialize SW1, SW2 and activate external interrupt with falling edge.
+************************************************************************************/
 void SWs_init(void)
 {
 	// 0010 0000 -> 00FE DCBA
@@ -82,27 +100,50 @@ void SWs_init(void)
 	// NVIC_EN0_REG |= (1<<30);
 }
 
-/* Return SW1 value */
+/************************************************************************************
+* Function Name: Read_STOP_SW
+* Parameters (in): None
+* Parameters (out): SW1 data value (uint8)
+* Return value: SW1 data value (uint8)
+* Description: Function to Return SW1 value.
+************************************************************************************/
 uint8 Read_STOP_SW(void)
 {
 	return BIT_IS_SET((*((volatile uint32 *)(SW_PORT + PORT_RIS_OFFSET))), SW1_PIN);
 }
 
-/* Return SW2 value */
+/************************************************************************************
+* Function Name: Read_START_SW
+* Parameters (in): None
+* Parameters (out): SW2 data value (uint8)
+* Return value: SW2 data value (uint8)
+* Description: Function to Return SW2 value.
+************************************************************************************/
 uint8 Read_START_SW(void)
 {
 	return BIT_IS_SET((*((volatile uint32 *)(SW_PORT + PORT_RIS_OFFSET))), SW2_PIN);
 }
 
-/* High output on LED pin */
+/************************************************************************************
+* Function Name: LED_ON
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Function to set High output on LED pin.
+************************************************************************************/
 void LED_ON(void)
 {
 	(*((volatile uint32 *)(LED_PORT + PORT_DATA_REG_OFFSET)))  |= (1<<LED_PIN);
 }
 
-/* Low output on LED pin */
+/************************************************************************************
+* Function Name: LED_OFF
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Function to set Low output on LED pin.
+************************************************************************************/
 void LED_OFF(void)
 {
 	(*((volatile uint32 *)(LED_PORT + PORT_DATA_REG_OFFSET)))  &= ~(1<<LED_PIN);
 }
-

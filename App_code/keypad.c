@@ -6,7 +6,14 @@
  * Author:		Mohannad Ragab Afifi
  *******************************************************************************/
 #include "keypad.h"
+#include "tm4c123gh6pm_registers.h"
+#include "std_types.h"
+#include "common_macros.h"
+#include "App.h"
 
+/*******************************************************************************
+ *                          File GLobal Variables                              *
+ *******************************************************************************/
 /* Array of 4x4 to define characters which will be printe on specific key pressed */
 unsigned char symbol[N_row][N_col] = {{'1', '2', '3', 'A'},
 									  {'4', '5', '6', 'B'},
@@ -14,9 +21,28 @@ unsigned char symbol[N_row][N_col] = {{'1', '2', '3', 'A'},
 									  {'*', '0', '#', 'D'}};
 
 /*******************************************************************************
+ *                       Local Functions Definitions                           *
+ *******************************************************************************/
+/* delay n milliseconds (16 MHz CPU clock) */
+void delayMs(uint32 n)
+{
+	uint32 i, j;
+	for (i = 0; i < n; i++)
+		for (j = 0; j < 3180; j++)
+		{
+		} /* do nothing for 1 ms */
+}
+
+/*******************************************************************************
  *                           Functions Definitions                             *
  *******************************************************************************/
-/* Keypad_Init() configures PORTC and PORTE to scan keypad keys */
+/************************************************************************************
+* Function Name: keypad_Init
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: Initialize keypad Module.
+************************************************************************************/
 void keypad_Init(void)
 {
 	// 0001 0100 -> 00FE DCBA
@@ -82,6 +108,13 @@ void keypad_Init(void)
 #endif
 }
 
+/************************************************************************************
+* Function Name: KeyPad_getPressedKey
+* Parameters (in): None
+* Parameters (out): symbol[j][i] (uint8)
+* Return value: symbol[j][i] (uint8)
+* Description: Function responsible for getting the pressed keypad key.
+************************************************************************************/
 uint8 KeyPad_getPressedKey(void)
 {
 	while (1)
@@ -100,26 +133,10 @@ uint8 KeyPad_getPressedKey(void)
 				}
 			}
 		}
+		if (start_cooking_flag == 1)
+		{
+			return 'E';
+		}
 		delayMs(10);
 	}
-}
-
-/* delay n milliseconds (16 MHz CPU clock) */
-void delayMs(uint32 n)
-{
-	uint32 i, j;
-	for (i = 0; i < n; i++)
-		for (j = 0; j < 3180; j++)
-		{
-		} /* do nothing for 1 ms */
-}
-
-/* delay n microseconds (16 MHz CPU clock) */
-void delayUs(uint32 n)
-{
-	uint32 i, j;
-	for (i = 0; i < n; i++)
-		for (j = 0; j < 3; j++)
-		{
-		} /* do nothing for 1 us */
 }

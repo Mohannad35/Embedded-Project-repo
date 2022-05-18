@@ -20,11 +20,12 @@
 /* Global variable to determine the number of systick interrupt (number of seconds) */
 volatile uint32 ticks_num = 0;
 
-uint8 key_Value, Beef_weight = 0, Chicken_weight = 0, Cooking_Time_digit = 0, cook_time_flag = 0;
+uint8 key_Value, Beef_weight = 0, Chicken_weight = 0, Cooking_Time_digit = 0, Cooking_Time_cur_Pos = 0;
 uint16 Cooking_Time_total[4] = {0}, Total_cooking = 0;
 
 /* initialize with 5 at first so we make 0 when we start counting */
 uint8 first_stop_flag = 5, second_stop_flag = 5;
+uint8 start_cooking_flag = 5, clear_cooking_flag = 5;
 
 /*******************************************************************************
  *                       Local Functions Definitions                           *
@@ -124,6 +125,13 @@ void GPIOPortF_Handler(void)
 			SysTick_Disable();
 			ticks_num = 0;
 		}
+
+		if (clear_cooking_flag == 0)
+		{
+			Cooking_Time_cur_Pos = 0;
+			LCD_displayStringRowColumn(0, 0, "Cooking Time?");
+			LCD_displayStringRowColumn(1, 0, "00:00");
+		}
 	}
 	/* START button pressed */
 	else if (Read_START_SW())
@@ -137,6 +145,10 @@ void GPIOPortF_Handler(void)
 			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
 			LED_OFF();
 			SysTick_Enable();
+		}
+		if (start_cooking_flag == 0)
+		{
+			start_cooking_flag = 1;
 		}
 	}
 }
@@ -172,20 +184,23 @@ void Init_Task(void)
 	SYSCTL_REGCGC2_REG |= 0x0000003F;
 	delay = SYSCTL_REGCGC2_REG;
 
-	/* Initailize the LEDs as GPIO Pins */
-	Leds_Init();
-	/* Initailize the SW1 and SW2 as GPIO Pins */
-	SWs_init();
-	/* Initailize the Keypad as GPIO Pins */
-	keypad_Init();
 	/* Initailize the LCD as GPIO Pins */
 	LCD_init();
 	LCD_clearScreen();
-	LCD_displayString("A B C D");
+	LCD_displayString("Initializing...");
+	/* Initailize the SW1 and SW2 as GPIO Pins */
+	SWs_init();
+	/* Initailize the LEDs as GPIO Pins */
+	Leds_Init();
+	/* Initailize the Keypad as GPIO Pins */
+	keypad_Init();
 	/* Initalize the SysTick Timer to generate an interrupt every 1 second */
 	SysTick_Init();
 	/* Disable timer till we need it */
 	SysTick_Disable();
+	Delay_MS(500);
+	LCD_clearScreen();
+	LCD_displayString("A B C D");
 }
 
 /************************************************************************************
@@ -273,45 +288,85 @@ void Chicken_Task(void)
 ************************************************************************************/
 void Cooking_Time_Task(void)
 {
+	uint8 cur_pos_i = 0;
 	Total_cooking = 0;
-	cook_time_flag = 0;
+	Cooking_Time_cur_Pos = 0;
 	Cooking_Time_digit = 0;
-	Cooking_Time_total[0] = 0, Cooking_Time_total[1] = 0, Cooking_Time_total[2] = 0, Cooking_Time_total[3] = 0;
+	Cooking_Time_total[0] = '0', Cooking_Time_total[1] = '0', Cooking_Time_total[2] = '0', Cooking_Time_total[3] = '0';
 	
 	LCD_clearScreen();
 	/* Display “Cooking Time?” and wait for keypad input */
 	LCD_displayStringRowColumn(0, 0, "Cooking Time?");
 	LCD_displayStringRowColumn(1, 0, "00:00");
+	clear_cooking_flag = 0;
+	start_cooking_flag = 0;
 	do
 	{
-		Cooking_Time_digit = KeyPad_getPressedKey();
-		if ((Cooking_Time_digit < '1') || (Cooking_Time_digit > '9'))
+		if (Cooking_Time_cur_Pos < 4)
 		{
-			cook_time_flag = 0;
-			LCD_clearScreen();
-			LCD_displayString("Err");
-			Delay_MS(2000);
-			LCD_clearScreen();
-			LCD_displayStringRowColumn(0, 0, "Cooking Time?");
-			LCD_displayStringRowColumn(1, 0, "00:00");
-		}
-		else
-		{
-			cook_time_flag += 1;
-			Cooking_Time_total[cook_time_flag - 1] = Cooking_Time_digit;
-			for (uint8 i = 0, j = 0; j < cook_time_flag; i++, j++)
+			Cooking_Time_digit = KeyPad_getPressedKey();
+			if (Cooking_Time_digit != 'E')
 			{
-				if (i == 2)
+				if ((Cooking_Time_digit < '1') || (Cooking_Time_digit > '9'))
 				{
-					i += 1;
+					Cooking_Time_cur_Pos = 0;
+					LCD_clearScreen();
+					LCD_displayString("Err");
+					Delay_MS(2000);
+					LCD_clearScreen();
+					LCD_displayStringRowColumn(0, 0, "Cooking Time?");
+					LCD_displayStringRowColumn(1, 0, "00:00");
 				}
-				LCD_goToRowColumn(1, (4 - i));
-				LCD_displayCharacter(Cooking_Time_total[cook_time_flag - j - 1]);
+				else
+				{
+					Cooking_Time_cur_Pos += 1;
+
+					// cur_pos_i = Cooking_Time_cur_Pos - 2;
+					// for (uint8 k = 0; k < Cooking_Time_cur_Pos - 1; k++)
+					// {
+					// 	Cooking_Time_total[2 - k - cur_pos_i] = Cooking_Time_total[3 - k - cur_pos_i];
+					// 	// cur --> 2
+					// 	// Cooking_Time_total[2 - k - 0] = Cooking_Time_total[3 - k - 0];
+					// 	// cur --> 3
+					// 	// Cooking_Time_total[2 - k - 1] = Cooking_Time_total[3 - k - 1];
+					// 	// cur --> 4
+					// 	// Cooking_Time_total[2 - k - 2] = Cooking_Time_total[3 - k - 2];
+					// }
+					switch (Cooking_Time_cur_Pos)
+					{
+					case 2:
+						Cooking_Time_total[2] = Cooking_Time_total[3];
+						break;
+					case 3:
+						Cooking_Time_total[1] = Cooking_Time_total[2];
+						Cooking_Time_total[2] = Cooking_Time_total[3];
+						break;
+					case 4:
+						Cooking_Time_total[0] = Cooking_Time_total[1];
+						Cooking_Time_total[1] = Cooking_Time_total[2];
+						Cooking_Time_total[2] = Cooking_Time_total[3];
+						break;
+					default:
+						break;
+					}
+					Cooking_Time_total[3] = Cooking_Time_digit;
+					for (uint8 i = 0, j = 0; j < Cooking_Time_cur_Pos; i++, j++)
+					{
+						if (i == 2)
+						{
+							i += 1;
+						}
+						LCD_goToRowColumn(1, (4 - i));
+						LCD_displayCharacter(Cooking_Time_total[3 - j]);
+					}
+					Delay_MS(400);
+				}
 			}
-			Delay_MS(400);
 		}
-	} while (cook_time_flag < 4);
-	Delay_MS(1000);
+	} while (start_cooking_flag == 0);
+	clear_cooking_flag = 5;
+	start_cooking_flag = 5;
+	// Delay_MS(1000);
 	LCD_clearScreen();
 	Total_cooking = string_to_int(Cooking_Time_total[0]) * 600 +
 					string_to_int(Cooking_Time_total[1]) * 60 +
