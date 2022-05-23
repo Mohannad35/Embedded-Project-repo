@@ -2840,6 +2840,12 @@
         </settings>
     </configuration>
     <file>
+        <name>$PROJ_DIR$\App.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\App.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\common_macros.h</name>
     </file>
     <file>

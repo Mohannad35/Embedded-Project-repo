@@ -20,8 +20,8 @@
 /* Global variable to determine the number of systick interrupt (number of seconds) */
 volatile uint32 ticks_num = 0;
 
-uint8 key_Value, Beef_weight = 0, Chicken_weight = 0, Cooking_Time_digit = 0, Cooking_Time_cur_Pos = 0;
-uint16 Cooking_Time_total[4] = {0}, Total_cooking = 0;
+uint8 key_Value, Beef_weight = 0, Chicken_weight = 0, CookingTime_digit = 0, CookingTime_cur_Pos = 0;
+uint16 CookingTime_total[4] = {0}, Total_cooking = 0;
 
 /* initialize with 5 at first so we make 0 when we start counting */
 uint8 first_stop_flag = 5, second_stop_flag = 5;
@@ -80,7 +80,7 @@ uint16 string_to_int(uint8 ch)
  *                 Interrupt Handler Functions Definitions                     *
  *******************************************************************************/
 /************************************************************************************
-* Function Name: GPIOPortF_Handler
+* Function Name: SysTick_Handler
 * Parameters (in): None
 * Parameters (out): None
 * Return value: None
@@ -98,7 +98,7 @@ void SysTick_Handler(void)
 * Parameters (in): None
 * Parameters (out): None
 * Return value: None
-* Description: GPIO Port Interrupt Handler.
+* Description: GPIO PortF Interrupt Handler. (for Stop and start switches)
 ************************************************************************************/
 void GPIOPortF_Handler(void)
 {
@@ -111,8 +111,7 @@ void GPIOPortF_Handler(void)
 		if (first_stop_flag == 0)
 		{
 			first_stop_flag = 1;
-			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
-			LED_ON();
+			second_stop_flag = 5;
 			SysTick_Disable();
 		}
 		/* STOP button pressed for 2nd time */
@@ -120,7 +119,6 @@ void GPIOPortF_Handler(void)
 		{
 			first_stop_flag = 5;
 			second_stop_flag = 1;
-			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
 			LED_OFF();
 			SysTick_Disable();
 			ticks_num = 0;
@@ -128,7 +126,7 @@ void GPIOPortF_Handler(void)
 
 		if (clear_cooking_flag == 0)
 		{
-			Cooking_Time_cur_Pos = 0;
+			CookingTime_cur_Pos = 0;
 			LCD_displayStringRowColumn(0, 0, "Cooking Time?");
 			LCD_displayStringRowColumn(1, 0, "00:00");
 		}
@@ -141,14 +139,39 @@ void GPIOPortF_Handler(void)
 
 		if (first_stop_flag == 1)
 		{
+			second_stop_flag = 5;
 			first_stop_flag = 0;
-			// GPIO_PORTF_DATA_REG  &= 0xF1;			/* Leds LED OFF*/
-			LED_OFF();
+			LED_ON();
 			SysTick_Enable();
 		}
 		if (start_cooking_flag == 0)
 		{
+			LED_ON();
 			start_cooking_flag = 1;
+		}
+	}
+}
+
+/************************************************************************************
+* Function Name: GPIOPortA_Handler
+* Parameters (in): None
+* Parameters (out): None
+* Return value: None
+* Description: GPIO PortA Interrupt Handler. (for Door latch)
+************************************************************************************/
+void GPIOPortA_Handler(void)
+{
+	while (BIT_IS_SET((*((volatile uint32 *)(Door_SW_PORT + PORT_RIS_OFFSET))), SW3_PIN))
+	{
+		LED_TOGGLE();
+		for (uint16 i = 0; i < 100; i++)
+		{
+			Delay_MS(10);
+			if (BIT_IS_CLEAR((*((volatile uint32 *)(Door_SW_PORT + PORT_RIS_OFFSET))), SW3_PIN))
+			{
+				LED_OFF();
+				break;
+			}
 		}
 	}
 }
@@ -190,8 +213,12 @@ void Init_Task(void)
 	LCD_displayString("Initializing...");
 	/* Initailize the SW1 and SW2 as GPIO Pins */
 	SWs_init();
+	/* Initailize the SW3 as GPIO Pin */
+	Door_SW_init();
 	/* Initailize the LEDs as GPIO Pins */
 	Leds_Init();
+	/* Initailize the Buzzer as GPIO Pin */
+	Buzzer_Init();
 	/* Initailize the Keypad as GPIO Pins */
 	keypad_Init();
 	/* Initalize the SysTick Timer to generate an interrupt every 1 second */
@@ -288,28 +315,39 @@ void Chicken_Task(void)
 ************************************************************************************/
 void Cooking_Time_Task(void)
 {
-	uint8 cur_pos_i = 0;
+	/* total time that will be sent to be displayed on the LCD */
 	Total_cooking = 0;
-	Cooking_Time_cur_Pos = 0;
-	Cooking_Time_digit = 0;
-	Cooking_Time_total[0] = '0', Cooking_Time_total[1] = '0', Cooking_Time_total[2] = '0', Cooking_Time_total[3] = '0';
+	/* Cursor position to be used when entering the input time from keypad to be displayed on the LCD */
+	CookingTime_cur_Pos = 0;
+	/* the current input digit from the keypad */
+	CookingTime_digit = 0;
+	/* array to store the input digits (chars) from the keypad to operate on it later */
+	CookingTime_total[0] = '0', CookingTime_total[1] = '0', CookingTime_total[2] = '0', CookingTime_total[3] = '0';
 	
 	LCD_clearScreen();
 	/* Display “Cooking Time?” and wait for keypad input */
 	LCD_displayStringRowColumn(0, 0, "Cooking Time?");
 	LCD_displayStringRowColumn(1, 0, "00:00");
+	/* flag that will be set by stop switch interrupt handler to indicate LCD clear */
 	clear_cooking_flag = 0;
+	/* flag that will be set by start switch interrupt handler to indicate start operating */
 	start_cooking_flag = 0;
 	do
 	{
-		if (Cooking_Time_cur_Pos < 4)
+		/* Check if we done entering the 4 digits so we are waiting for the start switch to be pressed
+		 * and also not taking any more input from keypad */
+		if (CookingTime_cur_Pos < 4)
 		{
-			Cooking_Time_digit = KeyPad_getPressedKey();
-			if (Cooking_Time_digit != 'E')
+			/* get input from keypad */
+			CookingTime_digit = KeyPad_getPressedKey();
+			/* if the start switch is pressed while waiting for input from the keypad it will return 'E'
+			 * so we done entering input and go right to the operating state and countdown what have been entered */
+			if (CookingTime_digit != 'E')
 			{
-				if ((Cooking_Time_digit < '1') || (Cooking_Time_digit > '9'))
+				/* check for a non numeric char */
+				if ((CookingTime_digit < '0') || (CookingTime_digit > '9'))
 				{
-					Cooking_Time_cur_Pos = 0;
+					CookingTime_cur_Pos = 0;
 					LCD_clearScreen();
 					LCD_displayString("Err");
 					Delay_MS(2000);
@@ -319,47 +357,56 @@ void Cooking_Time_Task(void)
 				}
 				else
 				{
-					Cooking_Time_cur_Pos += 1;
-
-					// cur_pos_i = Cooking_Time_cur_Pos - 2;
-					// for (uint8 k = 0; k < Cooking_Time_cur_Pos - 1; k++)
-					// {
-					// 	Cooking_Time_total[2 - k - cur_pos_i] = Cooking_Time_total[3 - k - cur_pos_i];
-					// 	// cur --> 2
-					// 	// Cooking_Time_total[2 - k - 0] = Cooking_Time_total[3 - k - 0];
-					// 	// cur --> 3
-					// 	// Cooking_Time_total[2 - k - 1] = Cooking_Time_total[3 - k - 1];
-					// 	// cur --> 4
-					// 	// Cooking_Time_total[2 - k - 2] = Cooking_Time_total[3 - k - 2];
-					// }
-					switch (Cooking_Time_cur_Pos)
+					CookingTime_cur_Pos += 1;
+					/* store the entered digits so far in their right place for further calculation for total time */
+					switch (CookingTime_cur_Pos)
 					{
 					case 2:
-						Cooking_Time_total[2] = Cooking_Time_total[3];
+						CookingTime_total[2] = CookingTime_total[3];
 						break;
 					case 3:
-						Cooking_Time_total[1] = Cooking_Time_total[2];
-						Cooking_Time_total[2] = Cooking_Time_total[3];
+						CookingTime_total[1] = CookingTime_total[2];
+						CookingTime_total[2] = CookingTime_total[3];
 						break;
 					case 4:
-						Cooking_Time_total[0] = Cooking_Time_total[1];
-						Cooking_Time_total[1] = Cooking_Time_total[2];
-						Cooking_Time_total[2] = Cooking_Time_total[3];
+						CookingTime_total[0] = CookingTime_total[1];
+						CookingTime_total[1] = CookingTime_total[2];
+						CookingTime_total[2] = CookingTime_total[3];
 						break;
 					default:
 						break;
 					}
-					Cooking_Time_total[3] = Cooking_Time_digit;
-					for (uint8 i = 0, j = 0; j < Cooking_Time_cur_Pos; i++, j++)
+					CookingTime_total[3] = CookingTime_digit;
+					/* display what have been entered so far on the LCD */
+					for (uint8 i = 0, j = 0; j < CookingTime_cur_Pos; i++, j++)
 					{
 						if (i == 2)
 						{
 							i += 1;
 						}
 						LCD_goToRowColumn(1, (4 - i));
-						LCD_displayCharacter(Cooking_Time_total[3 - j]);
+						LCD_displayCharacter(CookingTime_total[3 - j]);
 					}
 					Delay_MS(400);
+				}
+			}
+			if ((CookingTime_total[0] > '2') || (CookingTime_total[2] > '5'))
+			{
+				if ((CookingTime_total[0] == '3') && ((CookingTime_total[1] > '0')||(CookingTime_total[2] > '0')||(CookingTime_total[3] > '0')))
+				{
+					/* reset all variables */
+					Total_cooking = 0;
+					CookingTime_cur_Pos = 0;
+					CookingTime_digit = 0;
+					CookingTime_total[0] = '0', CookingTime_total[1] = '0', CookingTime_total[2] = '0', CookingTime_total[3] = '0';
+
+					Delay_MS(500);
+					LCD_clearScreen();
+					LCD_displayString("MAX time Err");
+					Delay_MS(2000);
+					LCD_clearScreen();
+					LCD_displayStringRowColumn(0, 0, "Cooking Time?");
+					LCD_displayStringRowColumn(1, 0, "00:00");
 				}
 			}
 		}
@@ -368,10 +415,10 @@ void Cooking_Time_Task(void)
 	start_cooking_flag = 5;
 	// Delay_MS(1000);
 	LCD_clearScreen();
-	Total_cooking = string_to_int(Cooking_Time_total[0]) * 600 +
-					string_to_int(Cooking_Time_total[1]) * 60 +
-					string_to_int(Cooking_Time_total[2]) * 10 +
-					string_to_int(Cooking_Time_total[3]) * 1;
+	Total_cooking = string_to_int(CookingTime_total[0]) * 600 +
+					string_to_int(CookingTime_total[1]) * 60 +
+					string_to_int(CookingTime_total[2]) * 10 +
+					string_to_int(CookingTime_total[3]) * 1;
 	Counter_Task(Total_cooking);
 }
 
@@ -387,14 +434,24 @@ void Counter_Task(uint32 n_seconds)
 	ticks_num = n_seconds;
 	first_stop_flag = 0;
 	SysTick_Enable();
+	LED_ON();
+	LCD_displayCounter(n_seconds);
 	while (ticks_num > 0)
-		;
+	{
+		if ((first_stop_flag == 1) && (second_stop_flag == 5))
+		{
+			LED_TOGGLE();
+			Delay_MS(1000);
+		}
+	}
 	SysTick_Disable();
+	LED_OFF();
 	LCD_clearScreen();
 	if (second_stop_flag == 1)
 	{
 		second_stop_flag = 5;
 		first_stop_flag = 5;
+		ticks_num = 0;
 		LCD_displayString("Stopped!");
 		Delay_MS(2000);
 		LCD_clearScreen();
@@ -404,12 +461,19 @@ void Counter_Task(uint32 n_seconds)
 	{
 		second_stop_flag = 5;
 		first_stop_flag = 5;
+		ticks_num = 0;
 		LCD_displayString("Done!");
-		Delay_MS(2000);
+		// array of leds blink 3 times for 3 secs
+		for (uint8 i = 0; i < 3; i++)
+		{
+			LED_ON();
+			BUZZER_ON();
+			Delay_MS(3000);
+			LED_OFF();
+			BUZZER_OFF();
+			Delay_MS(3000);
+		}
 		LCD_clearScreen();
 		LCD_displayString("A B C D");
-		// ticks_num = 0;
-		// array of leds blink 3 times for 3 secs
 	}
-
 }
