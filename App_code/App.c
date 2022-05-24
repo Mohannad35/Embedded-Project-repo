@@ -146,7 +146,7 @@ void GPIOPortF_Handler(void)
 		}
 		if (start_cooking_flag == 0)
 		{
-			LED_ON();
+			// LED_ON();
 			start_cooking_flag = 1;
 		}
 	}
@@ -408,6 +408,24 @@ void Cooking_Time_Task(void)
 					LCD_displayStringRowColumn(0, 0, "Cooking Time?");
 					LCD_displayStringRowColumn(1, 0, "00:00");
 				}
+			}
+			if ((CookingTime_total[2] > '5') && (CookingTime_digit == 'E'))
+			{
+				/* reset all variables */
+				Total_cooking = 0;
+				CookingTime_cur_Pos = 0;
+				CookingTime_digit = 0;
+				CookingTime_total[0] = '0', CookingTime_total[1] = '0', CookingTime_total[2] = '0', CookingTime_total[3] = '0';
+
+				Delay_MS(500);
+				LCD_clearScreen();
+				LCD_displayString("Input Err");
+				Delay_MS(2000);
+				LCD_clearScreen();
+				LCD_displayStringRowColumn(0, 0, "Cooking Time?");
+				LCD_displayStringRowColumn(1, 0, "00:00");
+
+				start_cooking_flag = 0;
 			}
 		}
 	} while (start_cooking_flag == 0);

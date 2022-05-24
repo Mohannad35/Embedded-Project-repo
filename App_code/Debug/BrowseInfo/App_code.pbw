@@ -742,7 +742,7 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@5080@F@GPIOPortA_Handler@i",
+    "ID": "c:App.c@5083@F@GPIOPortA_Handler@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -770,7 +770,7 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@5872@F@Delay_MS@count",
+    "ID": "c:App.c@5875@F@Delay_MS@count",
     "What": "Variable",
     "defdec": "Def",
     "display": "count",
@@ -798,7 +798,7 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@6431@F@Init_Task@delay",
+    "ID": "c:App.c@6434@F@Init_Task@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
@@ -868,7 +868,7 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@12509@F@Cooking_Time_Task@i",
+    "ID": "c:App.c@12512@F@Cooking_Time_Task@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -882,7 +882,7 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@12509@F@Cooking_Time_Task@j",
+    "ID": "c:App.c@12512@F@Cooking_Time_Task@j",
     "What": "Variable",
     "defdec": "Dec",
     "display": "j",
@@ -902,7 +902,7 @@
     "display": "void Counter_Task(uint32)",
     "location": {
       "column": "6",
-      "line": "432",
+      "line": "450",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\App.c"
     },
     "name": "Counter_Task",
@@ -910,13 +910,13 @@
     "scope": null
   },
   {
-    "ID": "c:App.c@14924@F@Counter_Task@i",
+    "ID": "c:App.c@15500@F@Counter_Task@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "14",
-      "line": "467",
+      "line": "485",
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\App.c"
     },
     "name": "i",
@@ -4270,6 +4270,1604 @@
     "scope": null
   },
   {
+    "ID": "c:@F@__iar_program_start",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __iar_program_start(void)",
+    "location": {
+      "column": "13",
+      "line": "15",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__iar_program_start",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NMI_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void NMI_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "17",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "NMI_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@HardFault_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void HardFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "18",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "HardFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MemManage_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void MemManage_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "19",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "MemManage_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BusFault_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void BusFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "20",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "BusFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UsageFault_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UsageFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "21",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "UsageFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SVC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SVC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "22",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "SVC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DebugMon_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void DebugMon_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "23",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "DebugMon_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PendSV_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PendSV_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "24",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "PendSV_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "25",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortA_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortA_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "28",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortA_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortB_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortB_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "31",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortB_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortC_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "34",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortD_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortD_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "37",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortD_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortE_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortE_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "40",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortE_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortF_Handler",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIOPortF_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "43",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortF_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:cstartup_M.c@T@intfunc",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "45",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "intfunc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@UA@intvec_elem",
+    "What": "Union",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "members": [
+      {
+        "ID": "c:@UA@intvec_elem@FI@__fun",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "__fun",
+        "location": {
+          "column": "25",
+          "line": "46",
+          "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+        },
+        "name": "__fun",
+        "origin": "project_file",
+        "scope": "_anonymous_cstartup_M_c_46_9"
+      },
+      {
+        "ID": "c:@UA@intvec_elem@FI@__ptr",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "__ptr",
+        "location": {
+          "column": "39",
+          "line": "46",
+          "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+        },
+        "name": "__ptr",
+        "origin": "project_file",
+        "scope": "_anonymous_cstartup_M_c_46_9"
+      }
+    ],
+    "name": "",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@intvec_elem",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "union intvec_elem",
+    "location": {
+      "column": "48",
+      "line": "46",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "intvec_elem",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@__vector_table",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "__vector_table",
+    "location": {
+      "column": "19",
+      "line": "59",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__vector_table",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@NMI_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void NMI_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "114",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "NMI_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@HardFault_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void HardFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "116",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "HardFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MemManage_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void MemManage_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "118",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "MemManage_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@BusFault_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void BusFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "120",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "BusFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UsageFault_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UsageFault_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "122",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "UsageFault_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SVC_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SVC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "124",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "SVC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DebugMon_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void DebugMon_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "126",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "DebugMon_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PendSV_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PendSV_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "128",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "PendSV_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysTick_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SysTick_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "130",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "SysTick_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortA_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortA_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "134",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortA_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortB_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortB_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "136",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortB_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortC_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortC_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "138",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortC_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortD_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortD_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "140",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortD_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortE_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortE_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "142",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortE_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOPortF_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOPortF_Handler(void)",
+    "location": {
+      "column": "13",
+      "line": "144",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "GPIOPortF_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__cmain",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __cmain(void)",
+    "location": {
+      "column": "6",
+      "line": "147",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__cmain",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__iar_init_core",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __iar_init_core(void)",
+    "location": {
+      "column": "13",
+      "line": "148",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__iar_init_core",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__iar_init_vfp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __iar_init_vfp(void)",
+    "location": {
+      "column": "13",
+      "line": "149",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__iar_init_vfp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__iar_program_start",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void __iar_program_start(void)",
+    "location": {
+      "column": "6",
+      "line": "152",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+    },
+    "name": "__iar_program_start",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@328@macro@STD_TYPES_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_TYPES_H",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_TYPES_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@382@macro@CPU_TYPE_8",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_8",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_TYPE_8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@440@macro@CPU_TYPE_16",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_16",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_TYPE_16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@499@macro@CPU_TYPE_32",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_32",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_TYPE_32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@636@macro@CPU_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_TYPE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@679@macro@CPU_BIT_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BIT_ORDER",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_BIT_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@718@macro@CPU_BYTE_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BYTE_ORDER",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "CPU_BYTE_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@792@macro@MSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "MSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@878@macro@LSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "LSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@995@macro@HIGH_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HIGH_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "HIGH_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1081@macro@LOW_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOW_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "LOW_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1169@macro@STD_HIGH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_HIGH",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_HIGH",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1226@macro@STD_LOW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_LOW",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_LOW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1284@macro@STD_ACTIVE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_ACTIVE",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_ACTIVE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1348@macro@STD_IDLE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_IDLE",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_IDLE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1412@macro@STD_ON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_ON",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1467@macro@STD_OFF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_OFF",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "STD_OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1562@macro@FALSE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FALSE",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "FALSE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1610@macro@TRUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TRUE",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "TRUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@boolean",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "47",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "boolean",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@uint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "48",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "uint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@sint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char",
+    "location": {
+      "column": "31",
+      "line": "49",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "sint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@uint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "31",
+      "line": "50",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "uint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@sint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "31",
+      "line": "51",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "sint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@uint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long",
+    "location": {
+      "column": "31",
+      "line": "52",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "uint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@sint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long",
+    "location": {
+      "column": "31",
+      "line": "53",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "sint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@uint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long",
+    "location": {
+      "column": "31",
+      "line": "54",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "uint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@sint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long",
+    "location": {
+      "column": "31",
+      "line": "55",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "sint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@float32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "float",
+    "location": {
+      "column": "31",
+      "line": "56",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "float32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@float64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "double",
+    "location": {
+      "column": "31",
+      "line": "57",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
+    },
+    "name": "float64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@373@macro@KEYPAD_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEYPAD_H_",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KEYPAD_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@763@macro@N_col",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "N_col",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "N_col",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@780@macro@N_row",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "N_row",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "N_row",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@833@macro@KEYPAD_ROW_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEYPAD_ROW_PORT",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KEYPAD_ROW_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@884@macro@KEYPAD_ROW_PORT_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEYPAD_ROW_PORT_MASK",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KEYPAD_ROW_PORT_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@926@macro@KEYPAD_COL_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEYPAD_COL_PORT",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KEYPAD_COL_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@977@macro@KEYPAD_COL_PORT_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "KEYPAD_COL_PORT_MASK",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KEYPAD_COL_PORT_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@1021@macro@ROW_UPPER_PORT_PINS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROW_UPPER_PORT_PINS",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "ROW_UPPER_PORT_PINS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.h@1091@macro@COL_UPPER_PORT_PINS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COL_UPPER_PORT_PINS",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "COL_UPPER_PORT_PINS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keypad_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void keypad_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "39",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "keypad_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keypad_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void keypad_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "39",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "keypad_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@KeyPad_getPressedKey",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 KeyPad_getPressedKey(void)",
+    "location": {
+      "column": "7",
+      "line": "42",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KeyPad_getPressedKey",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@KeyPad_getPressedKey",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 KeyPad_getPressedKey(void)",
+    "location": {
+      "column": "7",
+      "line": "42",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+    },
+    "name": "KeyPad_getPressedKey",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@328@macro@STD_TYPES_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_TYPES_H",
+    "location": {
+      "column": "9",
+      "line": "9",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_TYPES_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@382@macro@CPU_TYPE_8",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_8",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_TYPE_8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@440@macro@CPU_TYPE_16",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_16",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_TYPE_16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@499@macro@CPU_TYPE_32",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_32",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_TYPE_32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@636@macro@CPU_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_TYPE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@679@macro@CPU_BIT_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BIT_ORDER",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_BIT_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@718@macro@CPU_BYTE_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BYTE_ORDER",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "CPU_BYTE_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@792@macro@MSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "MSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@878@macro@LSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "LSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@995@macro@HIGH_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HIGH_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "HIGH_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1081@macro@LOW_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOW_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "LOW_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1169@macro@STD_HIGH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_HIGH",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_HIGH",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1226@macro@STD_LOW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_LOW",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_LOW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1284@macro@STD_ACTIVE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_ACTIVE",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_ACTIVE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1348@macro@STD_IDLE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_IDLE",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_IDLE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1412@macro@STD_ON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_ON",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1467@macro@STD_OFF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_OFF",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "STD_OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1562@macro@FALSE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FALSE",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "FALSE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@1610@macro@TRUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TRUE",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "TRUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@boolean",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "47",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "boolean",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@uint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "48",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "uint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@sint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char",
+    "location": {
+      "column": "31",
+      "line": "49",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "sint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@uint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "31",
+      "line": "50",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "uint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@sint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "31",
+      "line": "51",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "sint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@uint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long",
+    "location": {
+      "column": "31",
+      "line": "52",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "uint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@sint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long",
+    "location": {
+      "column": "31",
+      "line": "53",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "sint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@uint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long",
+    "location": {
+      "column": "31",
+      "line": "54",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "uint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@sint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long",
+    "location": {
+      "column": "31",
+      "line": "55",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "sint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@float32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "float",
+    "location": {
+      "column": "31",
+      "line": "56",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "float32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Std_Types.h@T@float64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "double",
+    "location": {
+      "column": "31",
+      "line": "57",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
+    },
+    "name": "float64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:LED_SW.h@373@macro@LED_SW_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -5012,578 +6610,128 @@
     "scope": null
   },
   {
-    "ID": "c:@F@__iar_program_start",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __iar_program_start(void)",
-    "location": {
-      "column": "13",
-      "line": "15",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "__iar_program_start",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@NMI_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void NMI_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "17",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "NMI_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@HardFault_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void HardFault_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "18",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "HardFault_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@MemManage_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void MemManage_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "19",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "MemManage_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@BusFault_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void BusFault_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "20",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "BusFault_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UsageFault_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UsageFault_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "21",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "UsageFault_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SVC_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SVC_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "22",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "SVC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DebugMon_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void DebugMon_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "23",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "DebugMon_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PendSV_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PendSV_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "24",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "PendSV_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "25",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortA_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortA_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "28",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortA_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortB_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortB_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "31",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortB_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortC_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortC_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "34",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortD_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortD_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "37",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortD_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortE_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortE_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "40",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortE_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortF_Handler",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIOPortF_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "43",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortF_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:cstartup_M.c@T@intfunc",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "45",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "intfunc",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@UA@intvec_elem",
-    "What": "Union",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "46",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "members": [
-      {
-        "ID": "c:@UA@intvec_elem@FI@__fun",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "__fun",
-        "location": {
-          "column": "25",
-          "line": "46",
-          "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-        },
-        "name": "__fun",
-        "origin": "project_file",
-        "scope": "_anonymous_cstartup_M_c_46_9"
-      },
-      {
-        "ID": "c:@UA@intvec_elem@FI@__ptr",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "__ptr",
-        "location": {
-          "column": "39",
-          "line": "46",
-          "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-        },
-        "name": "__ptr",
-        "origin": "project_file",
-        "scope": "_anonymous_cstartup_M_c_46_9"
-      }
-    ],
-    "name": "",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@intvec_elem",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "union intvec_elem",
-    "location": {
-      "column": "48",
-      "line": "46",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "intvec_elem",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@__vector_table",
+    "ID": "c:@symbol",
     "What": "Variable",
     "defdec": "Def",
-    "display": "__vector_table",
+    "display": "symbol",
     "location": {
-      "column": "19",
-      "line": "59",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "column": "15",
+      "line": "18",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "__vector_table",
+    "name": "symbol",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@NMI_Handler",
+    "ID": "c:@F@delayMs",
     "What": "Function",
     "defdec": "Def",
-    "display": "void NMI_Handler(void)",
+    "display": "void delayMs(uint32)",
     "location": {
-      "column": "13",
-      "line": "114",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "column": "6",
+      "line": "27",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "NMI_Handler",
+    "name": "delayMs",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@HardFault_Handler",
-    "What": "Function",
+    "ID": "c:keypad.c@1295@F@delayMs@i",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void HardFault_Handler(void)",
+    "display": "i",
     "location": {
-      "column": "13",
-      "line": "116",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "HardFault_Handler",
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@MemManage_Handler",
+    "ID": "c:keypad.c@1295@F@delayMs@j",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "j",
+    "location": {
+      "column": "12",
+      "line": "29",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
+    },
+    "name": "j",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@keypad_Init",
     "What": "Function",
     "defdec": "Def",
-    "display": "void MemManage_Handler(void)",
+    "display": "void keypad_Init(void)",
     "location": {
-      "column": "13",
+      "column": "6",
+      "line": "46",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
+    },
+    "name": "keypad_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:keypad.c@2118@F@keypad_Init@delay",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "delay",
+    "location": {
+      "column": "25",
+      "line": "50",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@KeyPad_getPressedKey",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 KeyPad_getPressedKey(void)",
+    "location": {
+      "column": "7",
       "line": "118",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "MemManage_Handler",
+    "name": "KeyPad_getPressedKey",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@BusFault_Handler",
-    "What": "Function",
+    "ID": "c:keypad.c@6441@F@KeyPad_getPressedKey@j",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void BusFault_Handler(void)",
+    "display": "j",
     "location": {
-      "column": "13",
-      "line": "120",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "BusFault_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UsageFault_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UsageFault_Handler(void)",
-    "location": {
-      "column": "13",
+      "column": "15",
       "line": "122",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "UsageFault_Handler",
+    "name": "j",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@SVC_Handler",
-    "What": "Function",
+    "ID": "c:keypad.c@6668@F@KeyPad_getPressedKey@i",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "void SVC_Handler(void)",
+    "display": "i",
     "location": {
-      "column": "13",
-      "line": "124",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
+      "column": "16",
+      "line": "127",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
     },
-    "name": "SVC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DebugMon_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void DebugMon_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "126",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "DebugMon_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PendSV_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void PendSV_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "128",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "PendSV_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SysTick_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SysTick_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "130",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "SysTick_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortA_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortA_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "134",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortA_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortB_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortB_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "136",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortB_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortC_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortC_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "138",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortC_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortD_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortD_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "140",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortD_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortE_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortE_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "142",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortE_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOPortF_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOPortF_Handler(void)",
-    "location": {
-      "column": "13",
-      "line": "144",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "GPIOPortF_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__cmain",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __cmain(void)",
-    "location": {
-      "column": "6",
-      "line": "147",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "__cmain",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_init_core",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __iar_init_core(void)",
-    "location": {
-      "column": "13",
-      "line": "148",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "__iar_init_core",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_init_vfp",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __iar_init_vfp(void)",
-    "location": {
-      "column": "13",
-      "line": "149",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "__iar_init_vfp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_program_start",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void __iar_program_start(void)",
-    "location": {
-      "column": "6",
-      "line": "152",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\cstartup_M.c"
-    },
-    "name": "__iar_program_start",
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -5780,958 +6928,6 @@
       "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\systick.h"
     },
     "name": "SysTick_Enable",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@328@macro@STD_TYPES_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_TYPES_H",
-    "location": {
-      "column": "9",
-      "line": "9",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_TYPES_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@382@macro@CPU_TYPE_8",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_8",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_TYPE_8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@440@macro@CPU_TYPE_16",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_16",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_TYPE_16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@499@macro@CPU_TYPE_32",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_32",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_TYPE_32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@636@macro@CPU_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_TYPE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@679@macro@CPU_BIT_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BIT_ORDER",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_BIT_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@718@macro@CPU_BYTE_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BYTE_ORDER",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "CPU_BYTE_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@792@macro@MSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "MSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@878@macro@LSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "LSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@995@macro@HIGH_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HIGH_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "HIGH_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1081@macro@LOW_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOW_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "LOW_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1169@macro@STD_HIGH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_HIGH",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_HIGH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1226@macro@STD_LOW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_LOW",
-    "location": {
-      "column": "9",
-      "line": "31",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_LOW",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1284@macro@STD_ACTIVE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_ACTIVE",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_ACTIVE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1348@macro@STD_IDLE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_IDLE",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_IDLE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1412@macro@STD_ON",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_ON",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_ON",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1467@macro@STD_OFF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_OFF",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "STD_OFF",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1562@macro@FALSE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FALSE",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "FALSE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@1610@macro@TRUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TRUE",
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "TRUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@boolean",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "47",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "boolean",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@uint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "48",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "uint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@sint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "signed char",
-    "location": {
-      "column": "31",
-      "line": "49",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "sint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@uint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned short",
-    "location": {
-      "column": "31",
-      "line": "50",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "uint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@sint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "short",
-    "location": {
-      "column": "31",
-      "line": "51",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "sint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@uint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long",
-    "location": {
-      "column": "31",
-      "line": "52",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "uint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@sint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long",
-    "location": {
-      "column": "31",
-      "line": "53",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "sint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@uint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long long",
-    "location": {
-      "column": "31",
-      "line": "54",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "uint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@sint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long long",
-    "location": {
-      "column": "31",
-      "line": "55",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "sint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@float32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "float",
-    "location": {
-      "column": "31",
-      "line": "56",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "float32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:std_types.h@T@float64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "double",
-    "location": {
-      "column": "31",
-      "line": "57",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\std_types.h"
-    },
-    "name": "float64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@328@macro@COMMON_MACROS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COMMON_MACROS",
-    "location": {
-      "column": "9",
-      "line": "9",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "COMMON_MACROS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@394@macro@SET_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SET_BIT",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "SET_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@481@macro@CLEAR_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CLEAR_BIT",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "CLEAR_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@574@macro@TOGGLE_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TOGGLE_BIT",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "TOGGLE_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@692@macro@ROR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROR",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "ROR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@842@macro@ROL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROL",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "ROL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@999@macro@BIT_IS_SET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BIT_IS_SET",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "BIT_IS_SET",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:common_macros.h@1130@macro@BIT_IS_CLEAR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BIT_IS_CLEAR",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
-    },
-    "name": "BIT_IS_CLEAR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@328@macro@STD_TYPES_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_TYPES_H",
-    "location": {
-      "column": "9",
-      "line": "9",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_TYPES_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@382@macro@CPU_TYPE_8",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_8",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_TYPE_8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@440@macro@CPU_TYPE_16",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_16",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_TYPE_16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@499@macro@CPU_TYPE_32",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_32",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_TYPE_32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@636@macro@CPU_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_TYPE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@679@macro@CPU_BIT_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BIT_ORDER",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_BIT_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@718@macro@CPU_BYTE_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BYTE_ORDER",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "CPU_BYTE_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@792@macro@MSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "MSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@878@macro@LSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "LSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@995@macro@HIGH_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HIGH_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "HIGH_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1081@macro@LOW_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOW_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "LOW_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1169@macro@STD_HIGH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_HIGH",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_HIGH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1226@macro@STD_LOW",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_LOW",
-    "location": {
-      "column": "9",
-      "line": "31",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_LOW",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1284@macro@STD_ACTIVE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_ACTIVE",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_ACTIVE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1348@macro@STD_IDLE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_IDLE",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_IDLE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1412@macro@STD_ON",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_ON",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_ON",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1467@macro@STD_OFF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_OFF",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "STD_OFF",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1562@macro@FALSE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FALSE",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "FALSE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@1610@macro@TRUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TRUE",
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "TRUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@boolean",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "47",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "boolean",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@uint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "48",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "uint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@sint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "signed char",
-    "location": {
-      "column": "31",
-      "line": "49",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "sint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@uint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned short",
-    "location": {
-      "column": "31",
-      "line": "50",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "uint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@sint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "short",
-    "location": {
-      "column": "31",
-      "line": "51",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "sint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@uint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long",
-    "location": {
-      "column": "31",
-      "line": "52",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "uint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@sint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long",
-    "location": {
-      "column": "31",
-      "line": "53",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "sint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@uint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long long",
-    "location": {
-      "column": "31",
-      "line": "54",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "uint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@sint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long long",
-    "location": {
-      "column": "31",
-      "line": "55",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "sint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@float32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "float",
-    "location": {
-      "column": "31",
-      "line": "56",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "float32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Std_Types.h@T@float64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "double",
-    "location": {
-      "column": "31",
-      "line": "57",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\Std_Types.h"
-    },
-    "name": "float64",
     "origin": "user_include",
     "scope": null
   },
@@ -7002,310 +7198,114 @@
     "scope": null
   },
   {
-    "ID": "c:@symbol",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "symbol",
-    "location": {
-      "column": "15",
-      "line": "18",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "symbol",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delayMs",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void delayMs(uint32)",
-    "location": {
-      "column": "6",
-      "line": "27",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "delayMs",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@1295@F@delayMs@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@1295@F@delayMs@j",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "j",
-    "location": {
-      "column": "12",
-      "line": "29",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "j",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@keypad_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void keypad_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "46",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "keypad_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@2118@F@keypad_Init@delay",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "delay",
-    "location": {
-      "column": "25",
-      "line": "50",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "delay",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@KeyPad_getPressedKey",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8 KeyPad_getPressedKey(void)",
-    "location": {
-      "column": "7",
-      "line": "118",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "KeyPad_getPressedKey",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@6441@F@KeyPad_getPressedKey@j",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "j",
-    "location": {
-      "column": "15",
-      "line": "122",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "j",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.c@6668@F@KeyPad_getPressedKey@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "16",
-      "line": "127",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.h@373@macro@KEYPAD_H_",
+    "ID": "c:common_macros.h@328@macro@COMMON_MACROS",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "KEYPAD_H_",
+    "display": "COMMON_MACROS",
     "location": {
       "column": "9",
       "line": "9",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "KEYPAD_H_",
+    "name": "COMMON_MACROS",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:keypad.h@763@macro@N_col",
+    "ID": "c:common_macros.h@394@macro@SET_BIT",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "N_col",
+    "display": "SET_BIT",
     "location": {
       "column": "9",
-      "line": "20",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "line": "12",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "N_col",
+    "name": "SET_BIT",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:keypad.h@780@macro@N_row",
+    "ID": "c:common_macros.h@481@macro@CLEAR_BIT",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "N_row",
+    "display": "CLEAR_BIT",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
+    },
+    "name": "CLEAR_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:common_macros.h@574@macro@TOGGLE_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TOGGLE_BIT",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
+    },
+    "name": "TOGGLE_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:common_macros.h@692@macro@ROR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROR",
     "location": {
       "column": "9",
       "line": "21",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "N_row",
+    "name": "ROR",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:keypad.h@833@macro@KEYPAD_ROW_PORT",
+    "ID": "c:common_macros.h@842@macro@ROL",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "KEYPAD_ROW_PORT",
+    "display": "ROL",
     "location": {
       "column": "9",
       "line": "24",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "KEYPAD_ROW_PORT",
+    "name": "ROL",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:keypad.h@884@macro@KEYPAD_ROW_PORT_MASK",
+    "ID": "c:common_macros.h@999@macro@BIT_IS_SET",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "KEYPAD_ROW_PORT_MASK",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "KEYPAD_ROW_PORT_MASK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.h@926@macro@KEYPAD_COL_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEYPAD_COL_PORT",
-    "location": {
-      "column": "9",
-      "line": "26",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "KEYPAD_COL_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.h@977@macro@KEYPAD_COL_PORT_MASK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "KEYPAD_COL_PORT_MASK",
+    "display": "BIT_IS_SET",
     "location": {
       "column": "9",
       "line": "27",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "KEYPAD_COL_PORT_MASK",
+    "name": "BIT_IS_SET",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:keypad.h@1021@macro@ROW_UPPER_PORT_PINS",
+    "ID": "c:common_macros.h@1130@macro@BIT_IS_CLEAR",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "ROW_UPPER_PORT_PINS",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "ROW_UPPER_PORT_PINS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:keypad.h@1091@macro@COL_UPPER_PORT_PINS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COL_UPPER_PORT_PINS",
+    "display": "BIT_IS_CLEAR",
     "location": {
       "column": "9",
       "line": "30",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
+      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\common_macros.h"
     },
-    "name": "COL_UPPER_PORT_PINS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@keypad_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void keypad_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "39",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "keypad_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@keypad_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void keypad_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "39",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "keypad_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@KeyPad_getPressedKey",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8 KeyPad_getPressedKey(void)",
-    "location": {
-      "column": "7",
-      "line": "42",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "KeyPad_getPressedKey",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@KeyPad_getPressedKey",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8 KeyPad_getPressedKey(void)",
-    "location": {
-      "column": "7",
-      "line": "42",
-      "path": "D:\\Courses\\repos\\Microwave Oven Controller Project\\Embedded Project repo\\App_code\\keypad.h"
-    },
-    "name": "KeyPad_getPressedKey",
+    "name": "BIT_IS_CLEAR",
     "origin": "user_include",
     "scope": null
   },

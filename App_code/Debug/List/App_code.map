@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.2.313/W64 for ARM                  22/May/2022  16:24:52
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  24/May/2022  18:00:56
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -70,48 +70,49 @@ initialize by copy { rw };
   .intvec            const            0x0    0xbc  cstartup_M.o [1]
                                    - 0xbc    0xbc
 
-"P1":                                      0x10dd
-  .text              ro code         0xbc   0x6ec  App.o [1]
-  .text              ro code        0x7a8   0x314  LCD.o [1]
-  .text              ro code        0xabc   0x308  LED_SW.o [1]
-  .text              ro code        0xdc4    0x6c  systick.o [1]
-  .text              ro code        0xe30   0x150  keypad.o [1]
-  .text              ro code        0xf80    0x78  main.o [1]
-  .text              ro code        0xff8    0x3a  packbits_init_single.o [4]
-  .text              ro code       0x1032     0x2  cstartup_M.o [1]
-  .text              ro code       0x1034    0x28  data_init.o [4]
-  .text              ro code       0x105c    0x22  fpinit_M.o [3]
-  .iar.init_table    const         0x1080    0x10  - Linker created -
-  .text              ro code       0x1090     0x2  cstartup_M.o [1]
-  .text              ro code       0x1094    0x1e  cmain.o [4]
-  .text              ro code       0x10b2     0x4  low_level_init.o [2]
-  .text              ro code       0x10b6     0x4  exit.o [2]
-  .text              ro code       0x10ba     0x2  cstartup_M.o [1]
-  .text              ro code       0x10bc     0xa  cexit.o [4]
+"P1":                                      0x117d
+  .text              ro code         0xbc   0x780  App.o [1]
+  .text              ro code        0x83c   0x314  LCD.o [1]
+  .text              ro code        0xb50   0x308  LED_SW.o [1]
+  .text              ro code        0xe58    0x6c  systick.o [1]
+  .text              ro code        0xec4   0x150  keypad.o [1]
+  .text              ro code       0x1014    0x78  main.o [1]
+  .text              ro code       0x108c    0x3a  packbits_init_single.o [4]
   .text              ro code       0x10c6     0x2  cstartup_M.o [1]
-  .text              ro code       0x10c8    0x14  exit.o [5]
-  .rodata            const         0x10dc    0x10  App.o [1]
-  .rodata            const         0x10ec    0x10  App.o [1]
-  .rodata            const         0x10fc    0x10  App.o [1]
-  .rodata            const         0x110c    0x10  App.o [1]
-  .rodata            const         0x111c    0x10  App.o [1]
-  .text              ro code       0x112c    0x10  cstartup_M.o [1]
-  .rodata            const         0x113c     0xc  App.o [1]
-  .rodata            const         0x1148     0x8  App.o [1]
-  .rodata            const         0x1150     0x8  App.o [1]
-  .rodata            const         0x1158     0x8  App.o [1]
-  .rodata            const         0x1160     0x8  App.o [1]
-  .text              ro code       0x1168     0x2  cstartup_M.o [1]
-  .text              ro code       0x116a     0x2  cstartup_M.o [1]
-  .text              ro code       0x116c     0x2  cstartup_M.o [1]
-  .text              ro code       0x116e     0x2  cstartup_M.o [1]
-  .text              ro code       0x1170     0x2  cstartup_M.o [1]
-  .text              ro code       0x1172     0x2  cstartup_M.o [1]
-  .text              ro code       0x1174     0x2  cstartup_M.o [1]
-  .text              ro code       0x1176     0x2  cstartup_M.o [1]
-  .rodata            const         0x1178     0x0  packbits_init_single.o [4]
-  Initializer bytes  const         0x1178    0x21  <for P2-1>
-                                 - 0x1199  0x10dd
+  .text              ro code       0x10c8    0x28  data_init.o [4]
+  .text              ro code       0x10f0    0x22  fpinit_M.o [3]
+  .iar.init_table    const         0x1114    0x10  - Linker created -
+  .text              ro code       0x1124     0x2  cstartup_M.o [1]
+  .text              ro code       0x1128    0x1e  cmain.o [4]
+  .text              ro code       0x1146     0x4  low_level_init.o [2]
+  .text              ro code       0x114a     0x4  exit.o [2]
+  .text              ro code       0x114e     0x2  cstartup_M.o [1]
+  .text              ro code       0x1150     0xa  cexit.o [4]
+  .text              ro code       0x115a     0x2  cstartup_M.o [1]
+  .text              ro code       0x115c    0x14  exit.o [5]
+  .rodata            const         0x1170    0x10  App.o [1]
+  .rodata            const         0x1180    0x10  App.o [1]
+  .rodata            const         0x1190    0x10  App.o [1]
+  .rodata            const         0x11a0    0x10  App.o [1]
+  .rodata            const         0x11b0    0x10  App.o [1]
+  .text              ro code       0x11c0    0x10  cstartup_M.o [1]
+  .rodata            const         0x11d0     0xc  App.o [1]
+  .rodata            const         0x11dc     0xc  App.o [1]
+  .rodata            const         0x11e8     0x8  App.o [1]
+  .rodata            const         0x11f0     0x8  App.o [1]
+  .rodata            const         0x11f8     0x8  App.o [1]
+  .rodata            const         0x1200     0x8  App.o [1]
+  .text              ro code       0x1208     0x2  cstartup_M.o [1]
+  .text              ro code       0x120a     0x2  cstartup_M.o [1]
+  .text              ro code       0x120c     0x2  cstartup_M.o [1]
+  .text              ro code       0x120e     0x2  cstartup_M.o [1]
+  .text              ro code       0x1210     0x2  cstartup_M.o [1]
+  .text              ro code       0x1212     0x2  cstartup_M.o [1]
+  .text              ro code       0x1214     0x2  cstartup_M.o [1]
+  .text              ro code       0x1216     0x2  cstartup_M.o [1]
+  .rodata            const         0x1218     0x0  packbits_init_single.o [4]
+  Initializer bytes  const         0x1218    0x21  <for P2-1>
+                                 - 0x1239  0x117d
 
 "P2", part 1 of 2:                           0x33
   P2-1                        0x2000'0000    0x33  <Init block>
@@ -140,7 +141,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x1199     0x3'ffff  0x3'ee67
+       0x1239     0x3'ffff  0x3'edc7
   0x2000'0033  0x2000'0037       0x5
   0x2000'1038  0x2000'7fff    0x6fc8
 
@@ -153,7 +154,7 @@ Unused ranges:
           -------      ----
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x21 (64% of destination):
-               0x1178  0x21
+               0x1218  0x21
     1 destination range, total size 0x33:
           0x2000'0000  0x33
 
@@ -170,7 +171,7 @@ command line/config:
     Total:
 
 D:\Courses\repos\Microwave Oven Controller Project\Embedded Project repo\App_code\Debug\Obj: [1]
-    App.o                     1'772      139       23
+    App.o                     1'920      151       23
     LCD.o                       788        8       12
     LED_SW.o                    776
     cstartup_M.o                 40      188
@@ -178,7 +179,7 @@ D:\Courses\repos\Microwave Oven Controller Project\Embedded Project repo\App_cod
     main.o                      120
     systick.o                   108
     -------------------------------------------------
-    Total:                    3'940      345       51
+    Total:                    4'088      357       51
 
 dl7M_tln.a: [2]
     exit.o                        4
@@ -207,7 +208,7 @@ shb_l.a: [5]
     Gaps                          2        2
     Linker created                        16    4'096
 -----------------------------------------------------
-    Grand Total:              4'142      363    4'147
+    Grand Total:              4'290      375    4'147
 
 
 *******************************************************************************
@@ -216,84 +217,84 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base        0x1080          --   Gb  - Linker created -
-.iar.init_table$$Limit       0x1090          --   Gb  - Linker created -
-?main                        0x1095         Code  Gb  cmain.o [4]
-BUZZER_OFF                    0xd43    0xe  Code  Gb  LED_SW.o [1]
-BUZZER_ON                     0xd35    0xe  Code  Gb  LED_SW.o [1]
-Beef_Task                     0x301   0x84  Code  Gb  App.o [1]
+.iar.init_table$$Base        0x1114          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1124          --   Gb  - Linker created -
+?main                        0x1129         Code  Gb  cmain.o [4]
+BUZZER_OFF                    0xdd7    0xe  Code  Gb  LED_SW.o [1]
+BUZZER_ON                     0xdc9    0xe  Code  Gb  LED_SW.o [1]
+Beef_Task                     0x2fd   0x84  Code  Gb  App.o [1]
 Beef_weight             0x2000'002f    0x1  Data  Gb  App.o [1]
-BusFault_Handler             0x10c7    0x2  Code  Gb  cstartup_M.o [1]
-Buzzer_Init                   0xb21   0x64  Code  Gb  LED_SW.o [1]
+BusFault_Handler             0x115b    0x2  Code  Gb  cstartup_M.o [1]
+Buzzer_Init                   0xbb5   0x64  Code  Gb  LED_SW.o [1]
 CSTACK$$Base            0x2000'0038          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'1038          --   Gb  - Linker created -
-Chicken_Task                  0x385   0x84  Code  Gb  App.o [1]
+Chicken_Task                  0x381   0x84  Code  Gb  App.o [1]
 Chicken_weight          0x2000'0030    0x1  Data  Gb  App.o [1]
 CookingTime_cur_Pos     0x2000'0032    0x1  Data  Gb  App.o [1]
 CookingTime_digit       0x2000'0031    0x1  Data  Gb  App.o [1]
 CookingTime_total       0x2000'0020    0x8  Data  Gb  App.o [1]
-Cooking_Time_Task             0x40d  0x25c  Code  Gb  App.o [1]
-Counter_Task                  0x66d   0xdc  Code  Gb  App.o [1]
-DebugMon_Handler             0x116d    0x2  Code  Gb  cstartup_M.o [1]
-Delay_MS                      0x247   0x38  Code  Gb  App.o [1]
-Door_SW_init                  0xb85   0xa4  Code  Gb  LED_SW.o [1]
-GPIOPortA_Handler             0x20f   0x38  Code  Gb  App.o [1]
-GPIOPortB_Handler            0x1171    0x2  Code  Gb  cstartup_M.o [1]
-GPIOPortC_Handler            0x1173    0x2  Code  Gb  cstartup_M.o [1]
-GPIOPortD_Handler            0x1175    0x2  Code  Gb  cstartup_M.o [1]
-GPIOPortE_Handler            0x1177    0x2  Code  Gb  cstartup_M.o [1]
-GPIOPortF_Handler             0x12d   0xe2  Code  Gb  App.o [1]
-HardFault_Handler            0x1091    0x2  Code  Gb  cstartup_M.o [1]
-Init_Task                     0x27f   0x62  Code  Gb  App.o [1]
-KeyPad_getPressedKey          0xee9   0x58  Code  Gb  keypad.o [1]
-LCD_clearScreen               0xa1b    0xa  Code  Gb  LCD.o [1]
-LCD_displayCharacter          0x90f   0xa2  Code  Gb  LCD.o [1]
-LCD_displayCounter            0xa25   0x5e  Code  Gb  LCD.o [1]
-LCD_displayString             0x9b1   0x20  Code  Gb  LCD.o [1]
+Cooking_Time_Task             0x409  0x2ee  Code  Gb  App.o [1]
+Counter_Task                  0x6fd   0xdc  Code  Gb  App.o [1]
+DebugMon_Handler             0x120d    0x2  Code  Gb  cstartup_M.o [1]
+Delay_MS                      0x243   0x38  Code  Gb  App.o [1]
+Door_SW_init                  0xc19   0xa4  Code  Gb  LED_SW.o [1]
+GPIOPortA_Handler             0x20b   0x38  Code  Gb  App.o [1]
+GPIOPortB_Handler            0x1211    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortC_Handler            0x1213    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortD_Handler            0x1215    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortE_Handler            0x1217    0x2  Code  Gb  cstartup_M.o [1]
+GPIOPortF_Handler             0x12d   0xde  Code  Gb  App.o [1]
+HardFault_Handler            0x1125    0x2  Code  Gb  cstartup_M.o [1]
+Init_Task                     0x27b   0x62  Code  Gb  App.o [1]
+KeyPad_getPressedKey          0xf7d   0x58  Code  Gb  keypad.o [1]
+LCD_clearScreen               0xaaf    0xa  Code  Gb  LCD.o [1]
+LCD_displayCharacter          0x9a3   0xa2  Code  Gb  LCD.o [1]
+LCD_displayCounter            0xab9   0x5e  Code  Gb  LCD.o [1]
+LCD_displayString             0xa45   0x20  Code  Gb  LCD.o [1]
 LCD_displayStringRowColumn
-                              0xa07   0x14  Code  Gb  LCD.o [1]
-LCD_goToRowColumn             0x9d1   0x36  Code  Gb  LCD.o [1]
-LCD_init                      0x7c3   0xaa  Code  Gb  LCD.o [1]
-LCD_sendCommand               0x86d   0xa2  Code  Gb  LCD.o [1]
-LED_OFF                       0xd19    0xe  Code  Gb  LED_SW.o [1]
-LED_ON                        0xd0b    0xe  Code  Gb  LED_SW.o [1]
-LED_TOGGLE                    0xd27    0xe  Code  Gb  LED_SW.o [1]
-Leds_Init                     0xabd   0x64  Code  Gb  LED_SW.o [1]
-MemManage_Handler            0x10bb    0x2  Code  Gb  cstartup_M.o [1]
-NMI_Handler                  0x1033    0x2  Code  Gb  cstartup_M.o [1]
-PendSV_Handler               0x116f    0x2  Code  Gb  cstartup_M.o [1]
-Popcorn_Task                  0x2e1   0x20  Code  Gb  App.o [1]
-Read_START_SW                 0xd01    0xa  Code  Gb  LED_SW.o [1]
-Read_STOP_SW                  0xcf7    0xa  Code  Gb  LED_SW.o [1]
-Region$$Table$$Base          0x1080          --   Gb  - Linker created -
-Region$$Table$$Limit         0x1090          --   Gb  - Linker created -
-SVC_Handler                  0x116b    0x2  Code  Gb  cstartup_M.o [1]
-SWs_init                      0xc29   0xce  Code  Gb  LED_SW.o [1]
-SysTick_Disable               0xdf9    0xe  Code  Gb  systick.o [1]
-SysTick_Enable                0xe07   0x14  Code  Gb  systick.o [1]
+                              0xa9b   0x14  Code  Gb  LCD.o [1]
+LCD_goToRowColumn             0xa65   0x36  Code  Gb  LCD.o [1]
+LCD_init                      0x857   0xaa  Code  Gb  LCD.o [1]
+LCD_sendCommand               0x901   0xa2  Code  Gb  LCD.o [1]
+LED_OFF                       0xdad    0xe  Code  Gb  LED_SW.o [1]
+LED_ON                        0xd9f    0xe  Code  Gb  LED_SW.o [1]
+LED_TOGGLE                    0xdbb    0xe  Code  Gb  LED_SW.o [1]
+Leds_Init                     0xb51   0x64  Code  Gb  LED_SW.o [1]
+MemManage_Handler            0x114f    0x2  Code  Gb  cstartup_M.o [1]
+NMI_Handler                  0x10c7    0x2  Code  Gb  cstartup_M.o [1]
+PendSV_Handler               0x120f    0x2  Code  Gb  cstartup_M.o [1]
+Popcorn_Task                  0x2dd   0x20  Code  Gb  App.o [1]
+Read_START_SW                 0xd95    0xa  Code  Gb  LED_SW.o [1]
+Read_STOP_SW                  0xd8b    0xa  Code  Gb  LED_SW.o [1]
+Region$$Table$$Base          0x1114          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1124          --   Gb  - Linker created -
+SVC_Handler                  0x120b    0x2  Code  Gb  cstartup_M.o [1]
+SWs_init                      0xcbd   0xce  Code  Gb  LED_SW.o [1]
+SysTick_Disable               0xe8d    0xe  Code  Gb  systick.o [1]
+SysTick_Enable                0xe9b   0x14  Code  Gb  systick.o [1]
 SysTick_Handler               0x111   0x1c  Code  Gb  App.o [1]
-SysTick_Init                  0xdc5   0x34  Code  Gb  systick.o [1]
+SysTick_Init                  0xe59   0x34  Code  Gb  systick.o [1]
 Total_cooking           0x2000'0028    0x2  Data  Gb  App.o [1]
-UsageFault_Handler           0x1169    0x2  Code  Gb  cstartup_M.o [1]
-__cmain                      0x1095         Code  Gb  cmain.o [4]
-__exit                       0x10c9   0x14  Code  Gb  exit.o [5]
-__iar_data_init3             0x1035   0x28  Code  Gb  data_init.o [4]
-__iar_init_vfp               0x105d         Code  Gb  fpinit_M.o [3]
+UsageFault_Handler           0x1209    0x2  Code  Gb  cstartup_M.o [1]
+__cmain                      0x1129         Code  Gb  cmain.o [4]
+__exit                       0x115d   0x14  Code  Gb  exit.o [5]
+__iar_data_init3             0x10c9   0x28  Code  Gb  data_init.o [4]
+__iar_init_vfp               0x10f1         Code  Gb  fpinit_M.o [3]
 __iar_packbits_init_single3
-                              0xff9   0x3a  Code  Gb  packbits_init_single.o [4]
-__iar_program_start          0x112d   0x10  Code  Gb  cstartup_M.o [1]
-__low_level_init             0x10b3    0x4  Code  Gb  low_level_init.o [2]
+                             0x108d   0x3a  Code  Gb  packbits_init_single.o [4]
+__iar_program_start          0x11c1   0x10  Code  Gb  cstartup_M.o [1]
+__low_level_init             0x1147    0x4  Code  Gb  low_level_init.o [2]
 __vector_table                  0x0   0xbc  Data  Gb  cstartup_M.o [1]
-_call_main                   0x10a1         Code  Gb  cmain.o [4]
-_exit                        0x10bd         Code  Gb  cexit.o [4]
+_call_main                   0x1135         Code  Gb  cmain.o [4]
+_exit                        0x1151         Code  Gb  cexit.o [4]
 clear_cooking_flag      0x2000'002d    0x1  Data  Gb  App.o [1]
-delayMs                       0xe31   0x1a  Code  Gb  keypad.o [1]
-delay_Ms                      0x7a9   0x1a  Code  Gb  LCD.o [1]
-exit                         0x10b7    0x4  Code  Gb  exit.o [2]
+delayMs                       0xec5   0x1a  Code  Gb  keypad.o [1]
+delay_Ms                      0x83d   0x1a  Code  Gb  LCD.o [1]
+exit                         0x114b    0x4  Code  Gb  exit.o [2]
 first_stop_flag         0x2000'002a    0x1  Data  Gb  App.o [1]
 key_Value               0x2000'002e    0x1  Data  Gb  App.o [1]
-keypad_Init                   0xe4b   0x9e  Code  Gb  keypad.o [1]
-main                          0xf81   0x78  Code  Gb  main.o [1]
+keypad_Init                   0xedf   0x9e  Code  Gb  keypad.o [1]
+main                         0x1015   0x78  Code  Gb  main.o [1]
 num_symbol              0x2000'0010    0xc  Data  Gb  LCD.o [1]
 second_stop_flag        0x2000'002b    0x1  Data  Gb  App.o [1]
 start_cooking_flag      0x2000'002c    0x1  Data  Gb  App.o [1]
@@ -308,8 +309,8 @@ ticks_num               0x2000'001c    0x4  Data  Gb  App.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  4'142 bytes of readonly  code memory
-    363 bytes of readonly  data memory
+  4'290 bytes of readonly  code memory
+    375 bytes of readonly  data memory
   4'147 bytes of readwrite data memory
 
 Errors: none
