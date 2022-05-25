@@ -111,17 +111,6 @@ void Door_SW_init(void)
 	/* Enable Interrupt on SW3 pin */
 	(*((volatile uint32 *)(Door_SW_PORT + PORT_IM_OFFSET))) |= (1<<SW3_PIN);
 
-	// /* SW3 detect edges */
-    // (*((volatile uint32 *)(Door_SW_PORT + PORT_IS_OFFSET))) &= ~(1<<SW3_PIN);
-	// /* SW3 will detect a certain edge */
-	// (*((volatile uint32 *)(Door_SW_PORT + PORT_IBE_OFFSET))) &= ~(1<<SW3_PIN);
-	// /* SW3 will detect a falling edge */
-	// (*((volatile uint32 *)(Door_SW_PORT + PORT_IEV_OFFSET))) &= ~(1<<SW3_PIN);
-	// /* Clear Trigger flag for SW3 (Interupt Flag) */
-	// (*((volatile uint32 *)(Door_SW_PORT + PORT_ICR_OFFSET))) |= (1<<SW3_PIN);
-	// /* Enable Interrupt on SW3 pin */
-	// (*((volatile uint32 *)(Door_SW_PORT + PORT_IM_OFFSET))) |= (1<<SW3_PIN);
-
     /* Set GPIO PORTF priotiy as 2 by set Bit number 5, 6 and 7 with value 2 */
 	(*((volatile uint32 *)(NVIC_BASE_ADDRESS + Door_SW_PRI_OFFSET))) =
 		((*((volatile uint32 *)(NVIC_BASE_ADDRESS + Door_SW_PRI_OFFSET))) & Door_SW_PRI_MASK) |
