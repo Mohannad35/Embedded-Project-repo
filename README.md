@@ -1,2 +1,2 @@
 # Embedded-Project-repo
-![This is an image](https://drive.google.com/file/d/1iAPoaEJXS-l-poqf4kV8N_ZnxlrzZj4I/view)
+![This is an image](https://github.com/Mohannad35/Embedded-Project-repo/blob/master/Microwave%20Oven%20Controller%20Diagram.png)
